@@ -527,7 +527,7 @@
       <div class="row align-items-center">
 
         <div class="col-12">
-          <p style="text-align: center"><a class="btn btn-secondary" href="https://igcc.org.au/wp-content/uploads/2024/04/IGCC-Membership-Prospectus-2024.pdf">Download the Membership Prospectus</a></p>
+          <p style="text-align: center"><a class="btn btn-secondary"  href="/download-prospectus" target="_blank">Download the Membership Prospectus</a></p>
 <h2>Ready to join?</h2>
 
                       <div class="row">
@@ -577,37 +577,15 @@
   <div class="content-section-inner default-padding  grey">
     <div class="row mr-lg-0 align-items-stretch">
       <div class="col-12 ">
-        <p style="text-align: center"><a class="btn btn-secondary mr-3 " href="https://igcc.org.au/wp-content/uploads/2022/05/IGCC-Membership-Policy.pdf">Membership policy</a> <a class="btn btn-secondary-light" href="https://igcc.org.au/wp-content/uploads/2023/07/IGCC-Membership-Application-Form-2023-24-FINAL.pdf">Application form</a> &nbsp;&nbsp; <a class="btn btn-secondary-light" href="https://igcc.org.au/wp-content/uploads/2023/07/IGCC-Membership-Fee-Schedule-2023-2024-new-fees-and-categories_FINAL.pdf">Fee schedule</a></p>
+        <p style="text-align: center"><a class="btn btn-secondary mr-3 " href="/download-membership" target="_blank">Membership policy</a> <a class="btn btn-secondary-light" href="/download-application_form" target="_blank">Application form</a> &nbsp;&nbsp; <a class="btn btn-secondary-light" href="/download-fee_schedule" target="_blank">Fee schedule</a></p>
 <p class="smaller-width mt-4">For more information, call the IGCC team on +61 2 8974 1160 or email us at secretariat@igcc.org.au</p>
       </div>
 
           </div>
   </div>
 </div>
-                                
-<div style="background-repeat: no-repeat; background-image: url(https://igcc.org.au/wp-content/uploads/2023/05/quote.svg)" class="testimonials py-5 py-lg-7">
-  <div class="content-section container-fluid align-center standard-padding ">
-    <div class="container px-0 grey">
-      <div class="row">
-        <div class="col-12 mx-auto d-md-flex align-items-center text-primary">
-                                                        <img class="d-block d-md-none" src="./Membership - Investor Group on Climate Change_files/rebecca-e1685316834224.webp" alt="">
-                        <img class="d-md-block d-none" src="./Membership - Investor Group on Climate Change_files/Rebecca-0014_IGCC_Team_Portraits_9thMarch_2022@2x-640x925.webp" alt="">
-          
-          <blockquote class="px-4 py-2 py-lg-6 px-md-5 px-lg-7">
-          <span class="py-0 py-lg-4 d-block text-primary">
-            <p class="lead">Demand for climate progress continues to gather momentum, translating into an ever higher baseline for action.</p>
-<p>Time is against us, but we remain optimistic. We must scale our work exponentially and increase our strategic collaborations. Ultimately, we can all realise the benefits that the transition to net zero can bring – for investors, economies, society, and the planet on which we depend.</p>
-<p>Rebecca Mikula-Wright<br>
-Chief Executive Officer</p>
-<p><a class="btn btn-primary" href="https://igcc.org.au/about/our-management/">Meet our team</a></p>
-          </span>
-          </blockquote>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
   
+@include('userpages.section8')
   @include('userpages.section10')
             
     </div>

@@ -68,3 +68,19 @@ Route::group(['middleware' => ['admin.auth'], 'prefix' => 'admin'], function() {
  
 });
  
+Route::get('/download-prospectus', function () {
+    return redirect(asset('pdf/membership_prospectus.pdf'));
+});
+
+Route::get('/download-membership', function () {
+    return redirect(asset('pdf/membership_policy.pdf'));
+});
+
+Route::get('/download-application_form', function () {
+    return redirect(asset('pdf/application_form.pdf'));
+});
+
+Route::get('/download-fee_schedule', function () {
+    return redirect(asset('pdf/fee_schedule.pdf'));
+});
+
