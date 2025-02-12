@@ -195,6 +195,14 @@ public function logout() {
         //$user = Auth::user();         
         return view('userpages.membership');
     }
+    public function supportourwork(){ 
+        //$user = Auth::user();         
+        return view('userpages.supportwork');
+    }
+    public function joinourteam(){ 
+        //$user = Auth::user();         
+        return view('userpages.careers');
+    }
 
      
 }

@@ -40,6 +40,10 @@ Route::get('/resources', [UserAuthController::class, 'resources']);
 Route::get('/join_us', [UserAuthController::class, 'joinus']);
 //membership Page    
 Route::get('/membership', [UserAuthController::class, 'memberships']);
+//membership Page    
+Route::get('/support_our_work', [UserAuthController::class, 'supportourwork']);
+//join_our_team Page    
+Route::get('/join_our_team', [UserAuthController::class, 'joinourteam']);
 //to open register page
 Route::get("register", [RegisterController::class, "register"]);
 //to open login page

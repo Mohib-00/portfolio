@@ -40,8 +40,8 @@
   <li   id="menu-item-802" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-802 nav-item"><a href="/join_us" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-802">Join us</a>
   <ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-802" role="menu">
   <li  id="menu-item-896" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-896 nav-item"><a href="/membership" class="dropdown-item">Membership</a></li>
-  <li   id="menu-item-885" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-885 nav-item"><a href="/" class="dropdown-item">Support our work</a></li>
-  <li   id="menu-item-884" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-884 nav-item"><a  href="/" class="dropdown-item">Career opportunities</a></li>
+  <li   id="menu-item-885" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-885 nav-item"><a href="/support_our_work" class="dropdown-item">Support our work</a></li>
+  <li   id="menu-item-884" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-884 nav-item"><a  href="/join_our_team" class="dropdown-item">Career opportunities</a></li>
   </ul>
   </li>
   </ul></div>

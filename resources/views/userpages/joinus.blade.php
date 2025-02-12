@@ -148,10 +148,10 @@
   <div class="content-section-inner default-padding  skyblue">
     <div class="row mr-lg-0 align-items-stretch">
       <div class="col-12 ">
-        <h2><a href="/">Support our Work</a></h2>
+        <h2><a href="/support_our_work">Support our Work</a></h2>
 <p class="lead smaller-width">The movement of capital and the investors’ perspectives have immense power to support climate action, from funding clean energy, to influencing companies, to informing policy development.</p>
 <p class="lead smaller-width">As a not-for-profit organisation, an important part of our funding comes from partnerships and supporters who recognise IGCC’s track record and potential are keen to support more systemic climate action.</p>
-<p><a class="btn btn-link" href="/">Read more</a></p>
+<p><a class="btn btn-link" href="/support_our_work">Read more</a></p>
       </div>
 
           </div>
@@ -163,10 +163,10 @@
   <div class="content-section-inner default-padding  default">
     <div class="row mr-lg-0 align-items-stretch">
       <div class="col-12 ">
-        <h2><a href="/">Join our Team</a></h2>
+        <h2><a href="/join_our_team">Join our Team</a></h2>
 <p class="smaller-width lead">We are always on the lookout for talented people to join our team. Working at IGCC you will be at the forefront of discussions and collaborations that shape the future of sustainable investing.</p>
 <p class="smaller-width lead">At IGCC, we value a flexible and supportive work environment that promotes autonomy and work-life integration. We recognise and appreciate the unique strengths and perspectives each individual brings, empowering you to make a difference in our collective pursuit of a sustainable world.</p>
-<p><a class="btn btn-link" href="/">Read more</a></p>
+<p><a class="btn btn-link" href="/join_our_team">Read more</a></p>
       </div>
 
           </div>
