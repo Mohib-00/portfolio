@@ -130,79 +130,135 @@ public function logout() {
  
      
      public function home(){ 
-         //$user = Auth::user();         
-         return view('userpages.home');
+         $user = Auth::user();         
+         return view('userpages.home',compact('user'));
      }
  
      public function admin(){ 
-        // $user = Auth::user();         
-         return view('adminpages.admin');
-     }
+         $user = Auth::user();         
+        return view('adminpages.admin', ['userName' => $user->name]);
+    }
 
      public function about(){ 
-        //$user = Auth::user();         
-        return view('userpages.about');
+        $user = Auth::user();         
+        return view('userpages.about',compact('user'));
     }
 
     public function portfolio(){ 
-        //$user = Auth::user();         
-        return view('userpages.portfolio');
+        $user = Auth::user();         
+        return view('userpages.portfolio',compact('user'));
     }
     public function services(){ 
-        //$user = Auth::user();         
-        return view('userpages.servicepage');
+        $user = Auth::user();         
+        return view('userpages.servicepage',compact('user'));
     }
     public function contact(){ 
-        //$user = Auth::user();         
-        return view('userpages.contact');
+        $user = Auth::user();         
+        return view('userpages.contact',compact('user'));
     }
     public function allmembers(){ 
-        //$user = Auth::user();         
-        return view('userpages.members');
+        $user = Auth::user();         
+        return view('userpages.members',compact('user'));
     }
 
     public function teams(){ 
-        //$user = Auth::user();         
-        return view('userpages.team');
+        $user = Auth::user();         
+        return view('userpages.team',compact('user'));
     }
 
     public function news(){ 
-        //$user = Auth::user();         
-        return view('userpages.allnews');
+        $user = Auth::user();         
+        return view('userpages.allnews',compact('user'));
     }
     public function board(){ 
-        //$user = Auth::user();         
-        return view('userpages.board');
+        $user = Auth::user();         
+        return view('userpages.board',compact('user'));
     }
     public function event(){ 
-        //$user = Auth::user();         
-        return view('userpages.events');
+        $user = Auth::user();         
+        return view('userpages.events',compact('user'));
     }
     public function wedo(){ 
-        //$user = Auth::user();         
-        return view('userpages.whatwedo');
+        $user = Auth::user();         
+        return view('userpages.whatwedo',compact('user'));
     }
     public function resources(){ 
-        //$user = Auth::user();         
-        return view('userpages.resources');
+        $user = Auth::user();         
+        return view('userpages.resources',compact('user'));
     }
     public function joinus(){ 
-        //$user = Auth::user();         
-        return view('userpages.joinus');
+        $user = Auth::user();         
+        return view('userpages.joinus',compact('user'));
     }
 
     public function memberships(){ 
-        //$user = Auth::user();         
-        return view('userpages.membership');
+        $user = Auth::user();         
+        return view('userpages.membership',compact('user'));
     }
     public function supportourwork(){ 
-        //$user = Auth::user();         
-        return view('userpages.supportwork');
+        $user = Auth::user();         
+        return view('userpages.supportwork',compact('user'));
     }
     public function joinourteam(){ 
-        //$user = Auth::user();         
-        return view('userpages.careers');
+        $user = Auth::user();         
+        return view('userpages.careers',compact('user'));
     }
+
+    public function  users(){ 
+        $user = Auth::user();
+        $users = User::all();
+        return view('adminpages.users', ['userName' => $user->name,],compact('users'));
+      }
+
+      public function getUserData(Request $request)
+{
+    $userId = $request->input('user_id');
+    $user = User::find($userId);
+    $currentUser = Auth::user();  
+
+    if ($user) {
+        return response()->json([
+            'success' => true,
+            'user' => $user,
+            'currentUser' => $currentUser
+        ]);
+    }
+
+    return response()->json(['success' => false, 'message' => 'User not found']);
+}
+
+public function editUser(Request $request, $id)
+{
+    
+
+    $user = User::findOrFail($id);
+
+    $user->name = $request->name;
+    $user->email = $request->email;
+
+    if ($request->filled('password')) {
+        $user->password = Hash::make($request->password);
+    }
+
+    $user->userType = $request->userType;
+
+    $user->save();
+
+    return response()->json(['message' => 'User updated successfully.']);
+}
+
+public function deleteUser(Request $request)
+{
+    $user = User::find($request->user_id);
+
+    if ($user) {
+        $user->delete();
+
+        return response()->json(['success' => true, 'message' => 'User deleted successfully']);
+    }
+
+    return response()->json(['success' => false, 'message' => 'User not found']);
+}
 
      
 }

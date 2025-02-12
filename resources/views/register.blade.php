@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
     
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="icon" href="{{asset('logix.png')}}">
+    <link rel="icon" href="{{asset('Investor Group on Climate Change_files/logix.png')}}">
+
 
     @include('css')
  

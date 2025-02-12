@@ -1,28 +1,22 @@
-<script src="{{asset('Adminmaster/plugins/jquery/jquery.min.js')}}"></script>
-<script src="{{asset('Adminmaster/plugins/jquery-ui/jquery-ui.min.js')}}"></script>
+<script src="{{asset('adminboard/js/jquery.min.js')}}"></script>
+<script src="{{asset('adminboard/js/popper.min.js')}}"></script>
+<script src="{{asset('adminboard/js/bootstrap.min.js')}}"></script>
+<!-- wow animation -->
+<script src="{{asset('adminboard/js/animate.js')}}"></script>
+<!-- select country -->
+<script src="{{asset('adminboard/js/bootstrap-select.js')}}"></script>
+<!-- owl carousel -->
+<script src="{{asset('adminboard/js/owl.carousel.js')}}"></script> 
+<!-- chart js -->
+<script src="{{asset('adminboard/js/Chart.min.js')}}"></script>
+<script src="{{asset('adminboard/js/Chart.bundle.min.js')}}"></script>
+<script src="{{asset('adminboard/js/utils.js')}}"></script>
+<script src="{{asset('adminboard/js/analyser.js')}}"></script>
+<!-- nice scrollbar -->
+<script src="{{asset('adminboard/js/perfect-scrollbar.min.js')}}"></script>
 <script>
-  $.widget.bridge('uibutton', $.ui.button)
+   var ps = new PerfectScrollbar('#sidebar');
 </script>
-<script src="{{asset('Adminmaster/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-<!-- ChartJS -->
-<script src="{{asset('Adminmaster/plugins/chart.js/Chart.min.js')}}"></script>
-<!-- Sparkline -->
-<script src="{{asset('Adminmaster/plugins/sparklines/sparkline.js')}}"></script>
-<!-- JQVMap -->
-<script src="{{asset('Adminmaster/plugins/jqvmap/jquery.vmap.min.js')}}"></script>
-<script src="{{asset('Adminmaster/plugins/jqvmap/maps/jquery.vmap.usa.js')}}"></script>
-<!-- jQuery Knob Chart -->
-<script src="{{asset('Adminmaster/plugins/jquery-knob/jquery.knob.min.js')}}"></script>
-<!-- daterangepicker -->
-<script src="{{asset('Adminmaster/plugins/moment/moment.min.js')}}"></script>
-<script src="{{asset('Adminmaster/plugins/daterangepicker/daterangepicker.js')}}"></script>
-<!-- Tempusdominus Bootstrap 4 -->
-<script src="{{asset('Adminmaster/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js')}}"></script>
-<!-- Summernote -->
-<script src="{{asset('Adminmaster/plugins/summernote/summernote-bs4.min.js')}}"></script>
-<!-- overlayScrollbars -->
-<script src="{{asset('Adminmaster/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js')}}"></script>
-<!-- AdminLTE App -->
-<script src="{{asset('Adminmaster/dist/js/adminlte.js')}}"></script>
-<script src="{{asset('Adminmaster/dist/js/pages/dashboard.js')}}"></script>
-<script src="{{asset('Adminmaster/dist/js/demo.js')}}"></script>
+<!-- custom js -->
+<script src="{{asset('adminboard/js/chart_custom_style1.js')}}"></script>
+<script src="{{asset('adminboard/js/custom.js')}}"></script>

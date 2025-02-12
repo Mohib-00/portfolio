@@ -5,9 +5,27 @@
   
       <div class="d-none d-md-flex w-100 bg-white">`
         <div class="container-xl p-md-0 justify-content-end">
-          <div id="navbarActionDropdown" class="action-menu-class"><ul id="action-menu" class="navbar-nav navbar-expand ml-auto d-none d-md-flex"><li id="menu-item-16042" class="nmr-logged-out menu-item menu-item-type-post_type menu-item-object-page menu-item-16042 nav-item"><a href="/our_contact" class="nav-link">Contact us</a></li>
-  <li   id="menu-item-620" class="nmr-logged-out menu-item menu-item-type-post_type menu-item-object-page menu-item-620 nav-item"><a href="/login" class="nav-link">Sign In</a></li>
-  </ul></div>            </div>
+          <div id="navbarActionDropdown" class="action-menu-class">
+            <ul id="action-menu" class="navbar-nav navbar-expand ml-auto d-none d-md-flex"><li id="menu-item-16042" class="nmr-logged-out menu-item menu-item-type-post_type menu-item-object-page menu-item-16042 nav-item"><a href="/our_contact" class="nav-link">Contact us</a></li>
+
+              @if ($user)
+              
+                  <a href="#" id="navbarNavDropdown" class="navbarNavDropdown collapse navbar-collapse w-100"><ul id="main-menu" class="navbar-nav ml-auto"><li   id="menu-item-97" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-97 nav-item"><a href="/our-about" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-97">
+                      <span style="color: purple;">{{ $user->name }}</span>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-97" role="menu">
+                    <li  id="menu-item-504" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-504 nav-item"><a href="/#" class="dropdown-item logoutuser">Logout</a></li>
+                    </ul>
+                @else
+              <li id="menu-item-620" class="nav-item">
+                  <a href="/login" class="nav-link">Sign In</a>
+              </li>
+          @endif
+          
+
+       </ul>
+</div>
+            </div>
       </div>
   
                 <div class="container-fluid content-section p-0 px-2 px-lg-0 standard-padding mt-md-4 d-flex justify-between">
@@ -46,7 +64,12 @@
   </li>
   </ul></div>
           <div id="navbarMobileActionDropdown" class="navbarNavDropdown mobile-action-menu-class collapse navbar-collapse d-md-none"><ul id="action-menu" class="navbar-nav navbar-expand justify-content-end mobile-action-menu"><li class="nmr-logged-out menu-item menu-item-type-post_type menu-item-object-page menu-item-16042 nav-item"><a href="/our_contact" class="nav-link">Contact us</a></li>
-  <li   class="nmr-logged-out menu-item menu-item-type-post_type menu-item-object-page menu-item-620 nav-item"><a href="/login" class="nav-link">Sign in</a></li>
+     @if ($user)
+  <li class="nmr-logged-out menu-item menu-item-type-post_type menu-item-object-page menu-item-620 nav-item"><a href="#" class="nav-link logoutuser">Logout</a></li>
+     @else
+ <li class="nmr-logged-out menu-item menu-item-type-post_type menu-item-object-page menu-item-620 nav-item"><a href="/login" class="nav-link">Sign in</a></li>
+     @endif
+
   <li class="search search-wpb"><form role="search" method="get" id="searchform" action="" data-hs-cf-bound="true">
     <label class="sr-only" for="s">Search</label>
     <div class="input-group">

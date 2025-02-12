@@ -7,8 +7,7 @@
   <body class="page-template-default page page-id-16 page-parent wp-custom-logo wp-embed-responsive group-blog" itemscope="" itemtype="http://schema.org/WebSite" cz-shortcut-listen="true">
         <div class="site" id="page">
 
-      <!-- ******************* The Navbar Area ******************* -->
-       
+        
 
  @include('userpages.navbar')
      

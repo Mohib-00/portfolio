@@ -69,7 +69,7 @@ Route::post("changePassword",[UserAuthcontroller::class,"changePassword"]);
 
 Route::group(['middleware' => ['admin.auth'], 'prefix' => 'admin'], function() {
     Route::get("", [UserAuthcontroller::class, "admin"]);
- 
+    Route::get("users", [UserAuthcontroller::class, "users"]);
 });
  
 Route::get('/download-prospectus', function () {
@@ -87,4 +87,12 @@ Route::get('/download-application_form', function () {
 Route::get('/download-fee_schedule', function () {
     return redirect(asset('pdf/fee_schedule.pdf'));
 });
+
+
+//to get user data
+Route::post('/get-user-data', [UserAuthcontroller::class, 'getUserData'])->name('user.getData');
+//to edit user
+Route::post('/users/{id}/edit', [UserAuthController::class, 'editUser']);
+//to delet user
+Route::post('/delete-user', [UserAuthcontroller::class, 'deleteUser'])->name('delete.user');
 
