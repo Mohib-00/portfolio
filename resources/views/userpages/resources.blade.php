@@ -7,6 +7,8 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <meta content="" name="keywords">
 <meta content="" name="description">
+<link rel="icon" href="{{asset('Investor Group on Climate Change_files/logix.png')}}">
+
 	 
 <link rel="stylesheet" id="website-styles-igcc-css" href="./Resources - Investor Group on Climate Change_files/theme-igcc.css" media="all">
 <link rel="stylesheet" id="wp-block-library-css" href="./Resources - Investor Group on Climate Change_files/style.min.css" media="all">
@@ -164,14 +166,8 @@
                                           <p>Guide | IIGCC, IGCC, AIGCC, Ceres | 24 January 2025</p>
                                           <p>New implementation guidance is now available to assist asset owners and managers in effectively using the Net Zero Investment Framework (NZIF) to set and achieve net zero objectives and targets across various asset classes.</p>
                                            <div class="mt-4 d-none d-md-block">
-                                            <a class="badge badge-light" href="https://igcc.org.au/market/australia/">Australia</a>
-                                            <a class="badge badge-light" href="https://igcc.org.au/topic/decarbonisation/">Decarbonising the Economy</a>
-                                            <a class="badge badge-light" href="https://igcc.org.au/workstream/investor-practice/">Investor Practice</a>
-                                            <a class="badge badge-light" href="https://igcc.org.au/working_group/paris-aligned-investment/">Investor Practice Working Group</a>
-                                            <a class="badge badge-light" href="https://igcc.org.au/initiative/net-zero-asset-managers-nzam/">Net Zero Asset Managers Initiative (NZAM)</a>
-                                            <a class="badge badge-light" href="https://igcc.org.au/topic/net-zero-investment-framework/">Net Zero Investment Framework</a>
-                                            <a class="badge badge-light" href="https://igcc.org.au/market/new-zealand/">New Zealand</a>
-                                            <a class="badge badge-light" href="https://igcc.org.au/initiative/paris-aligned-asset-owners-initiative-paao/">Paris-Aligned Asset Owners Initiative (PAAO)</a>
+                                            <a class="badge badge-light" href="/">Australia</a>
+                                            
                                           </div>
                                         </div>
                                       </div>

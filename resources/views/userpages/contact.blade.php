@@ -5,6 +5,7 @@
 	
 	<title>Contact us</title>
  
+  <link rel="icon" href="{{asset('Investor Group on Climate Change_files/logix.png')}}">
 
 
 <link rel="dns-prefetch" href="https://js.hs-scripts.com/">

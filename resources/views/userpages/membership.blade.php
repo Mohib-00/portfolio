@@ -3,6 +3,8 @@
     
 
 	<title>Logix 199-Membership</title>
+  <link rel="icon" href="{{asset('Investor Group on Climate Change_files/logix.png')}}">
+
 	<link rel="stylesheet" id="website-styles-igcc-css" href="Membership - Investor Group on Climate Change_files/theme-igcc.css" media="all">
 <link rel="stylesheet" id="wp-block-library-css" href="Membership - Investor Group on Climate Change_files/style.min.css" media="all">
 <style id="safe-svg-svg-icon-style-inline-css">

@@ -128,7 +128,7 @@
 
                     <div class="col-9 pl-0">
                       <h5>We are the regional connection to global investor networks</h5>
-<p>We co-ordinate with peer networks via the Paris Aligned Investor Initiative, which comprises IGCC in Australia/New Zealand, <a href="/">AIGCC</a> in Asia, the <a href="/">Institutional Investors Group on Climate Change</a>&nbsp;in Europe, and <a href="https://www.ceres.org/">Ceres</a> in North America.</p>
+<p>We co-ordinate with peer networks via the Paris Aligned Investor Initiative, which comprises IGCC in Australia/New Zealand, <a href="/">AIGCC</a> in Asia, the <a href="/">Institutional Investors Group on Climate Change</a>&nbsp;in Europe, and <a href="/">Ceres</a> in North America.</p>
 <p>We also run certain collaborative initiatives with global investor networks <a href="/">UN Environment Program Finance Initiative</a> as Investor Agenda.</p>
 <p>&nbsp;</p>
                     </div>

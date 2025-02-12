@@ -3,7 +3,8 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <meta content="" name="keywords">
 <meta content="" name="description">
-
+ <!-- Favicon  -->
+ <link rel="icon" href="{{asset('Investor Group on Climate Change_files/logix.png')}}">
 
 <link rel="stylesheet" id="website-styles-igcc-css" href="{{asset('Investor Group on Climate Change_files/theme-igcc.css')}}" media="all">
 <link rel="stylesheet" id="wp-block-library-css" href="Investor Group on Climate Change_files/style.min.css')}}" media="all">
