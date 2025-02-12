@@ -44,7 +44,7 @@
   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-394"><a href="/our-event">Events</a></li>
   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-928"><a href="/what_we_do">What we do</a></li>
   <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-308"><a href="/resources">Resources</a></li>
-  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-802"><a href="/">Join us</a></li>
+  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-802"><a href="/join_us">Join us</a></li>
   </ul></div></div>
   
           </div>

@@ -186,6 +186,15 @@ public function logout() {
         //$user = Auth::user();         
         return view('userpages.resources');
     }
+    public function joinus(){ 
+        //$user = Auth::user();         
+        return view('userpages.joinus');
+    }
+
+    public function memberships(){ 
+        //$user = Auth::user();         
+        return view('userpages.membership');
+    }
 
      
 }

@@ -36,6 +36,10 @@ Route::get('/our-event', [UserAuthController::class, 'event']);
 Route::get('/what_we_do', [UserAuthController::class, 'wedo']);
 //resources Page    
 Route::get('/resources', [UserAuthController::class, 'resources']);
+//join_us Page    
+Route::get('/join_us', [UserAuthController::class, 'joinus']);
+//membership Page    
+Route::get('/membership', [UserAuthController::class, 'memberships']);
 //to open register page
 Route::get("register", [RegisterController::class, "register"]);
 //to open login page
