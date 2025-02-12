@@ -14,7 +14,7 @@
   <meta name="author" content="">
   
   <!-- Site Icon -->
-  <link rel="icon" href="{{asset('logix.png')}}" type="image/png" />
+  <link rel="icon" href="{{asset('dummy.png')}}" type="image/png" />
   
   <!-- CSS Files -->
   <link rel="stylesheet" href="{{asset('adminboard/css/bootstrap.min.css')}}" />
