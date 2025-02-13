@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BannerController;
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\ProjectsController;
 use App\Http\Controllers\RegisterController;
@@ -67,6 +68,7 @@ Route::group(['middleware' => ['admin.auth'], 'prefix' => 'admin'], function() {
     Route::get("users", [UserAuthcontroller::class, "users"]);
     Route::get("messages", [MessageController::class, "message"]);
     Route::get("website-settings", [SettingsController::class, "websitesettings"]);
+    Route::get("add-banner-details", [BannerController::class, "addbannerdetails"]);
 });
  
 Route::get('/download-prospectus', function () {
@@ -103,3 +105,11 @@ Route::post('/settings/store', [SettingsController::class, 'store'])->name('sett
 Route::get('/get-setting/{id}', [SettingsController::class, 'getSetting']);
 //to edit settings
 Route::post('/update-setting/{id}', [SettingsController::class, 'updateSetting'])->name('update.setting');
+//to add banner data
+Route::post('/banner/store', [BannerController::class, 'store'])->name('banner.store');
+//to get banner data
+Route::get('/banner/{id}', [BannerController::class, 'show'])->name('banner.show');
+// Update banner data
+Route::post('/banner/{id}', [BannerController::class, 'update'])->name('banner.update');
+//to delet banner
+Route::post('/delete-banner', [BannerController::class, 'deletebanner'])->name('delete.banner');
