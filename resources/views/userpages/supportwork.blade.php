@@ -325,7 +325,7 @@
 
 </div>
 @include('userpages.footer')
-
+@include('ajax')
 
 <script src="./Support our work - Investor Group on Climate Change_files/atcb.min.js.download" id="add-to-calendar-button-js" async="" data-wp-strategy="async"></script>
 <script src="./Support our work - Investor Group on Climate Change_files/jquery.fitvids.js.download" id="fitvids-js"></script>
@@ -336,8 +336,3 @@
 <script src="./Support our work - Investor Group on Climate Change_files/scripts.js.download" id="sf-scripts-js"></script>
 <script defer="" src="./Support our work - Investor Group on Climate Change_files/v2.js.download" id="leadin-forms-v2-js"></script>
 <script type="text/javascript" src="./Support our work - Investor Group on Climate Change_files/slick.min.js.download"></script>
-
-
-
-
-

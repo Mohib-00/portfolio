@@ -364,7 +364,147 @@ $(document).ready(function() {
     });
 });
 
+ //to save customer message
+$(document).ready(function () {
+    $('#contactForm').on('submit', function (e) {
+        e.preventDefault();
+
+         
+        $('.text-danger').html('');
+
+        $.ajax({
+            url: "{{ route('submit.message') }}",
+            method: "POST",
+            data: $(this).serialize(),
+            success: function (response) {
+                if (response.status === 'success') {
+                    Swal.fire(
+                        'Message Sent!',
+                        'Our team will reach you shortly.',
+                        'success'
+                    );
+                    $('#contactForm')[0].reset();  
+                }
+            },
+            error: function (response) {
+                if (response.status === 422) {
+                    let errors = response.responseJSON.errors;
  
+                    $.each(errors, function (field, message) {
+                        $('#error-' + field).text(message[0]);
+                    });
+
+                    Swal.fire(
+                        'Error!',
+                        'Please correct the highlighted fields and try again.',
+                        'error'
+                    );
+                }
+            }
+        });
+    });
+});
+
+
+//to chng msg status
+$(document).on('click', '.editstatus', function(e) {
+    e.preventDefault();
+    const messageId = $(this).data('message-id');
+
+     Swal.fire({
+        title: 'Are you sure?',
+        text: "You want to mark this message as old?",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, change it!'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            $.ajax({
+                url: "/update-status",   
+                type: "POST",
+                data: {
+                    _token: "{{ csrf_token() }}",   
+                    message_id: messageId   
+                },
+                success: function(response) {
+                    if (response.success) {
+                        
+                        Swal.fire('Updated!', 'The status has been changed to Old.', 'success');
+
+                
+                        const statusTd = $(`a[data-message-id="${messageId}"]`).closest('tr').find('td.status');  
+                        statusTd.html('<span style="background-color: red; color: white; padding: 13px 13px; border-radius: 50px; display: inline-block;">Old</span>'); // Change status to 'Old'
+
+                         $(`a[data-message-id="${messageId}"]`).prop('disabled', true);
+                    } else {
+                        Swal.fire('Error!', response.message, 'error');
+                    }
+                },
+                error: function() {
+                    Swal.fire('Error!', 'Something went wrong.', 'error');
+                }
+            });
+        }
+    });
+});
+
+
+//to del message
+$(document).on('click', '.delmsg', function() {
+    const msgId = $(this).data('message-id');
+    const csrfToken = $('meta[name="csrf-token"]').attr('content');
+    const row = $(this).closest('tr');  
+
+    Swal.fire({
+        title: 'Are you sure?',
+        text: "Do you want to delete this message?",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#d33',
+        cancelButtonColor: '#3085d6',
+        confirmButtonText: 'Yes, delete!'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            $.ajaxSetup({
+                headers: { 'X-CSRF-TOKEN': csrfToken }
+            });
+
+            $.ajax({
+                url: '/delete-message',
+                type: 'POST',
+                data: { message_id: msgId },  
+                dataType: 'json',
+                success: function(response) {
+                    if (response.success) {
+                        row.remove(); 
+                        Swal.fire(
+                            'Deleted!',
+                            response.message,
+                            'success'
+                        );
+                    } else {
+                        Swal.fire(
+                            'Error',
+                            response.message,
+                            'error'
+                        );
+                    }
+                },
+                error: function(xhr) {
+                    console.error(xhr);
+                    Swal.fire(
+                        'Error',
+                        'An error occurred while deleting the message.',
+                        'error'
+                    );
+                }
+            });
+        }
+    });
+});
+
  
 </script>
 </body>

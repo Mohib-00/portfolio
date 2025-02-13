@@ -9,8 +9,45 @@ Thank you for your support!</h5>
 <p class="text-white">To learn more about our development and partnership opportunities please reach out via our contact form below<br>
 
 					
-					</p><div class="hbspt-form" id="hbspt-form-1739332913000-6614845875" data-hs-forms-root="true"><iframe id="hs-form-iframe-0" class="hs-form-iframe" title="Form 0" scrolling="no" width="100%" style="position: static; border: none; display: block; overflow: hidden; width: 100%; height: 477px;" height="477" src="./Support our work - Investor Group on Climate Change_files/saved_resource.html"></iframe></div><p></p>
-      </div>
+					</p>
+          <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <form id="contactForm" class="contact-form" style="background-color: none; padding: 2rem;">
+                    @csrf
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label style="color:white" for="name" class="form-label">Name</label>
+                            <input type="text" name="name" class="form-control" placeholder="Your Name">
+                            <small class="text-danger" id="error-name"></small>
+                        </div>
+                
+                        <div class="col-md-6 form-group">
+                            <label style="color:white" for="email" class="form-label">Email</label>
+                            <input type="text" name="email" class="form-control" placeholder="Your Email">
+                            <small class="text-danger" id="error-email"></small>
+                        </div>
+                
+                        <div class="col-md-12 form-group">
+                            <label style="color:white" for="phone" class="form-label">Phone</label>
+                            <input type="number" name="phone" class="form-control" placeholder="Phone">
+                            <small class="text-danger" id="error-phone"></small>
+                        </div>
+                
+                        <div class="col-md-12 form-group">
+                            <label style="color:white" for="message" class="form-label">Message</label>
+                            <textarea name="message" class="form-control" placeholder="Message"></textarea>
+                            <small class="text-danger" id="error-message"></small>
+                        </div>
+                
+                        <div class="col-md-12 form-group">
+                            <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+       </div>
     </div>
   </div>
 </div>

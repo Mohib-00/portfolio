@@ -97,7 +97,7 @@
     }		</style>
 		  <style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
 
-  <body class="page-template-default page page-id-512 wp-custom-logo wp-embed-responsive group-blog" itemscope="" itemtype="http://schema.org/WebSite" cz-shortcut-listen="true">
+  <body class="page-template-default page page-id-512 wp-custom-logo wp-embed-responsive group-blog">
         <div class="site" id="page">
 
             @include('userpages.navbar')
@@ -148,18 +148,9 @@
     <div class="components mx-auto">
 
                                             
-<div class="standard-content content-section container-fluid bottom-padding-medium">
 
-  <div class="content-section-inner default-padding  default">
-    <div class="row mr-lg-0 align-items-stretch">
-      <div class="col-12 ">
-        <p class="smaller-width">For general enquiries use the numbers, email addresses and postal details below.</p>
-<p>You may also want to contact individual members of <a href="https://igcc.org.au/about/our-management/">our team</a> regarding specialist topics or workstreams. </p>
-      </div>
+  @include('userpages.section10')
 
-          </div>
-  </div>
-</div>
                                 
 <div class="flexible-columns content-section container-fluid  top-padding-none content-end">
   <div class="content-section-inner default-padding moss">
@@ -200,96 +191,17 @@ Membership enquiries: secretariat@igcc.org.au</p>
 
 
 </div><!-- #page we need this extra closing tag here -->
+@include('userpages.footer')
 
-<div class="wrapper" id="wrapper-footer">
+@include('ajax')
 
-  <div class="components site container-fluid align-right">
-
-    <footer class="mx-auto pt-5 pb-4 row site-footer" id="colophon">
-
-      <div class="col-12 mb-4 mb-lg-5">
-                          <img class="footer-logo" src="./Contact us - Investor Group on Climate Change_files/IGCC_Logo-1.svg" alt="">
-              </div>
-
-      <div class="col-12 col-lg-4 footer-content">
-        <div class="site-info">
-          <p>The Investor Group on Climate Change (ABN 15 519 534 459), established in 2005, is a Company Limited by Guarantee with a non-executive board under the Australian Corporations Act and is registered under the Australian Charities and Not-for-Profits Commission (ACNC) It is governed by a board comprised of representatives of full and associate members.</p>
-<p class="smaller-text">We acknowledge the traditional custodians of the lands on which we work. They include the Boonwurrung, Gadigal, and Ngunnawal people.</p>
-<p class="smaller-text">© Investor Group on Climate Change 2023 –<br>
-<a href="https://igcc.org.au/terms">Website Terms and Conditions</a> | <a href="https://igcc.org.au/privacy">Privacy Policy</a></p>
-        </div><!-- .site-info -->
-      </div>
-
-      <div class="col-7 col-lg-4 mt-4 mt-md-0">
-        <div class="contact-details">
-          <h3>Contact us</h3>
-<ul>
-<li>PO Box Q937</li>
-<li>Queen Victoria Building NSW 1230</li>
-<li>Phone: <a class="d-inline-block" href="tel:+61289741160">+61 2 8974 1160</a></li>
-<li>Email: <a class="d-inline-block" href="mailto:secretariat@igcc.org.au">secretariat@igcc.org.au</a></li>
-</ul>
-        </div>
-
-        <div class="footer-follow mt-4">
-          <div class="row nav mx-0">
-            <p><a href="https://au.linkedin.com/company/investor-group-on-climate-change-igcc" target="_blank" rel="noopener"><img decoding="async" class="alignnone size-medium wp-image-960" src="./Contact us - Investor Group on Climate Change_files/linkedin.svg" alt=""></a><a href="https://twitter.com/IGCC_Update" target="_blank" rel="noopener"><img loading="lazy" decoding="async" width="29" height="27" class="alignnone size-medium wp-image-959" src="./Contact us - Investor Group on Climate Change_files/Twitter-X_whitesml-1.webp" alt=""></a><a href="https://www.youtube.com/channel/UCvVRwupRekOHJAac3ZAHt2g" target="_blank" rel="noopener"><img decoding="async" class="alignnone size-medium wp-image-958" src="./Contact us - Investor Group on Climate Change_files/youtube.svg" alt=""></a></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-5 col-lg-4 mt-4 mt-md-0">
-        <div class="footer-menu">
-          
-          <div class="text-uppercase"><div class="menu-main-menu-container"><ul id="menu-main-menu" class=""><li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-97"><a href="https://igcc.org.au/about/">About us</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-307"><a href="https://igcc.org.au/news/">News</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-394"><a href="https://igcc.org.au/events/">Events</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-928"><a href="https://igcc.org.au/what-we-do/">What we do</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-308"><a href="https://igcc.org.au/resources/">Resources</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-802"><a href="https://igcc.org.au/join-us/">Join us</a></li>
-</ul></div></div>
-
-        </div>
-      </div>
-
-    </footer><!-- #colophon -->
-
-  </div><!-- container end -->
-
-</div><!-- wrapper end -->
-
-
-<!-- Start of Async HubSpot Analytics Code -->
-<script type="text/javascript">
-(function(d,s,i,r) {
-if (d.getElementById(i)){return;}
-var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
-n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/3359067.js';
-e.parentNode.insertBefore(n, e);
-})(document,"script","hs-analytics",300000);
-</script>
-<!-- End of Async HubSpot Analytics Code -->
 <script src="./Contact us - Investor Group on Climate Change_files/atcb.min.js.download" id="add-to-calendar-button-js" async="" data-wp-strategy="async"></script>
 <script src="./Contact us - Investor Group on Climate Change_files/jquery.fitvids.js.download" id="fitvids-js"></script>
-<script id="leadin-script-loader-js-js-extra">
-var leadin_wordpress = {"userRole":"visitor","pageType":"page","leadinPluginVersion":"11.1.60"};
-</script>
+
 <script src="./Contact us - Investor Group on Climate Change_files/3359067(2).js.download" id="leadin-script-loader-js-js"></script>
 <script src="./Contact us - Investor Group on Climate Change_files/core.min.js.download" id="jquery-ui-core-js"></script>
 <script src="./Contact us - Investor Group on Climate Change_files/datepicker.min.js.download" id="jquery-ui-datepicker-js"></script>
-<script id="jquery-ui-datepicker-js-after">
-jQuery(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"d MM yy","firstDay":1,"isRTL":false});});
-</script>
+
 <script src="./Contact us - Investor Group on Climate Change_files/theme.min.js.download" id="understrap-scripts-js"></script>
 <script src="./Contact us - Investor Group on Climate Change_files/scripts.js.download" id="sf-scripts-js"></script>
-		<script type="text/javascript">
-		jQuery(document).ready(function () {
-			jQuery('body').fitVids();
-		});
-		</script><script type="text/javascript" src="./Contact us - Investor Group on Climate Change_files/slick.min.js.download"></script>
-
-
-
-
-
-<iframe owner="archetype" title="archetype" style="display: none; visibility: hidden;" src="./Contact us - Investor Group on Climate Change_files/saved_resource.html"></iframe></body></html>
+<script type="text/javascript" src="./Contact us - Investor Group on Climate Change_files/slick.min.js.download"></script>

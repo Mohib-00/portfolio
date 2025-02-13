@@ -464,6 +464,7 @@
 </div>
 
 @include('userpages.footer')
+@include('ajax')
 
 <link rel="stylesheet" id="gform_basic-css" href="./What we do - Investor Group on Climate Change_files/basic.min.css" media="all">
 <link rel="stylesheet" id="gform_theme_components-css" href="./What we do - Investor Group on Climate Change_files/theme-components.min.css" media="all">

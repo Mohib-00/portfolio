@@ -608,6 +608,7 @@
 
 </div><
 @include('userpages.footer')
+@include('ajax')
 
 
 <link rel="stylesheet" id="gform_basic-css" href="Membership - Investor Group on Climate Change_files/basic.min.css" media="all">

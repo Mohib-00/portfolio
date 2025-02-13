@@ -1,15 +1,9 @@
 <?php
 
-use App\Http\Controllers\AboutServiceController;
-use App\Http\Controllers\BlogsController;
-use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\ProjectsController;
 use App\Http\Controllers\RegisterController;
-use App\Http\Controllers\ServiceController;
-use App\Http\Controllers\SettingsController;
 use App\Http\Controllers\UserAuthcontroller;
-use App\Http\Controllers\Websitecontroller;
 use Illuminate\Support\Facades\Route;
 
 //User Page    
@@ -70,6 +64,7 @@ Route::post("changePassword",[UserAuthcontroller::class,"changePassword"]);
 Route::group(['middleware' => ['admin.auth'], 'prefix' => 'admin'], function() {
     Route::get("", [UserAuthcontroller::class, "admin"]);
     Route::get("users", [UserAuthcontroller::class, "users"]);
+    Route::get("messages", [MessageController::class, "message"]);
 });
  
 Route::get('/download-prospectus', function () {
@@ -88,11 +83,15 @@ Route::get('/download-fee_schedule', function () {
     return redirect(asset('pdf/fee_schedule.pdf'));
 });
 
-
 //to get user data
 Route::post('/get-user-data', [UserAuthcontroller::class, 'getUserData'])->name('user.getData');
 //to edit user
 Route::post('/users/{id}/edit', [UserAuthController::class, 'editUser']);
 //to delet user
 Route::post('/delete-user', [UserAuthcontroller::class, 'deleteUser'])->name('delete.user');
-
+// to save customer message
+Route::post('/submit-message', [MessageController::class, 'submitMessage'])->name('submit.message');
+//to delet msg
+Route::post('/delete-message', [MessageController::class, 'deletemessage'])->name('delete.message');
+//to chng msg status
+Route::post('/update-status', [MessageController::class, 'updateStatus']);
