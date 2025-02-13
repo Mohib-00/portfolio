@@ -5,8 +5,8 @@
   
       <footer class="mx-auto pt-5 pb-4 row site-footer" id="colophon">
   
-        <div class="col-12 mb-4 mb-lg-5">
-                            <img class="footer-logo" src="./Investor Group on Climate Change_files/IGCC_Logo-1.svg" alt="">
+                <div class="col-12 mb-4 mb-lg-5">
+                  <a href="/" class="navbar-brand" rel="home" aria-current="page"><img class="custom-logo-link" src="{{asset('Investor Group on Climate Change_files/logix.png')}}" class="img-fluid" alt="Investor Group on Climate Change" decoding="async"></a>            <!-- end custom logo -->
                 </div>
   
         <div class="col-12 col-lg-4 footer-content">

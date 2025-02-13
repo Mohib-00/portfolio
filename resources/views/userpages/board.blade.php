@@ -77,7 +77,7 @@ var SF_LDATA = {"ajax_url":"https:\/\/igcc.org.au\/wp-admin\/admin-ajax.php","ho
     @media (min-width: 1608px) {
   .custom-logo-link {
     max-height: 120px; 
-    max-width:140px
+    max-width:120px
   }
 }
 @media (max-width: 1607px) {

@@ -39,8 +39,8 @@ Thank you for your support!</h5>
                             <small class="text-danger" id="error-message"></small>
                         </div>
                 
-                        <div class="col-md-12 form-group">
-                            <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                        <div class="col-12 form-group">
+                            <input type="submit" value="Send Message" class="btn btn-primary">
                         </div>
                     </div>
                 </form>
