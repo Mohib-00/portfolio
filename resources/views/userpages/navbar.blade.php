@@ -30,7 +30,7 @@
   
                 <div class="container-fluid content-section p-0 px-2 px-lg-0 standard-padding mt-md-4 d-flex justify-between">
         
-         <a href="/" class="navbar-brand" rel="home" aria-current="page"><img class="custom-logo-link" src="{{asset('Investor Group on Climate Change_files/logix.png')}}" class="img-fluid" alt="Investor Group on Climate Change" decoding="async"></a>            <!-- end custom logo -->
+         <a href="/" class="navbar-brand" rel="home" aria-current="page"><img class="custom-logo-link" src="{{ asset('images/' . $settings->image_1) }}" class="img-fluid" alt="Investor Group on Climate Change" decoding="async"></a>            <!-- end custom logo -->
   
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="inactive position-absolute menu">Menu</span>

@@ -6,15 +6,13 @@
       <footer class="mx-auto pt-5 pb-4 row site-footer" id="colophon">
   
                 <div class="col-12 mb-4 mb-lg-5">
-                  <a href="/" class="navbar-brand" rel="home" aria-current="page"><img class="custom-logo-link" src="{{asset('Investor Group on Climate Change_files/logix.png')}}" class="img-fluid" alt="Investor Group on Climate Change" decoding="async"></a>            <!-- end custom logo -->
+                  <a href="/" class="navbar-brand" rel="home" aria-current="page"><img class="custom-logo-link" src="{{ asset('images/' . $settings->image_1) }}" class="img-fluid" alt="Investor Group on Climate Change" decoding="async"></a>            <!-- end custom logo -->
                 </div>
   
         <div class="col-12 col-lg-4 footer-content">
           <div class="site-info">
-            <p>The Investor Group on Climate Change (ABN 15 519 534 459), established in 2005, is a Company Limited by Guarantee with a non-executive board under the Australian Corporations Act and is registered under the Australian Charities and Not-for-Profits Commission (ACNC) It is governed by a board comprised of representatives of full and associate members.</p>
-  <p class="smaller-text">We acknowledge the traditional custodians of the lands on which we work. They include the Boonwurrung, Gadigal, and Ngunnawal people.</p>
-  <p class="smaller-text">© Investor Group on Climate Change 2023 –<br>
-  <a href="/">Website Terms and Conditions</a> | <a href="/">Privacy Policy</a></p>
+            <p>{{$settings->about_paragraph}}</p>
+   
           </div><!-- .site-info -->
         </div>
   
@@ -22,10 +20,9 @@
           <div class="contact-details">
             <h3>Contact us</h3>
   <ul>
-  <li>PO Box Q937</li>
-  <li>Queen Victoria Building NSW 1230</li>
-  <li>Phone: <a class="d-inline-block" href="/">+61 2 8974 1160</a></li>
-  <li>Email: <a class="d-inline-block" href="/">secretariat@igcc.org.au</a></li>
+  <li>{{$settings->address}}</li>
+  <li>Phone: <a class="d-inline-block" href="/">{{$settings->phone}}</a></li>
+  <li>Email: <a class="d-inline-block" href="/">{{$settings->email}}</a></li>
   </ul>
           </div>
   

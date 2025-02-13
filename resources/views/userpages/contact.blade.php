@@ -42,7 +42,7 @@
 @media (min-width: 1608px) {
   .custom-logo-link {
     max-height: 120px; 
-    max-width:140px
+    max-width:120px
   }
 }
 @media (max-width: 1607px) {

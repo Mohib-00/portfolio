@@ -24,7 +24,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url("{{ asset('Investor Group on Climate Change_files/logix.png') }}") no-repeat center;
+    background: url("{{ asset('images/' . $settings->image_1) }}") no-repeat center;
     background-size: contain;   
     background-attachment: fixed;  
     opacity: 0.8;

@@ -3,6 +3,7 @@
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\ProjectsController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\SettingsController;
 use App\Http\Controllers\UserAuthcontroller;
 use Illuminate\Support\Facades\Route;
 
@@ -65,6 +66,7 @@ Route::group(['middleware' => ['admin.auth'], 'prefix' => 'admin'], function() {
     Route::get("", [UserAuthcontroller::class, "admin"]);
     Route::get("users", [UserAuthcontroller::class, "users"]);
     Route::get("messages", [MessageController::class, "message"]);
+    Route::get("website-settings", [SettingsController::class, "websitesettings"]);
 });
  
 Route::get('/download-prospectus', function () {
@@ -95,3 +97,9 @@ Route::post('/submit-message', [MessageController::class, 'submitMessage'])->nam
 Route::post('/delete-message', [MessageController::class, 'deletemessage'])->name('delete.message');
 //to chng msg status
 Route::post('/update-status', [MessageController::class, 'updateStatus']);
+//to add settings
+Route::post('/settings/store', [SettingsController::class, 'store'])->name('settings.store');
+//to get settings
+Route::get('/get-setting/{id}', [SettingsController::class, 'getSetting']);
+//to edit settings
+Route::post('/update-setting/{id}', [SettingsController::class, 'updateSetting'])->name('update.setting');
