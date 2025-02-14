@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\BannerController;
 use App\Http\Controllers\HighlightController;
+use App\Http\Controllers\MemberController;
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\NetworkController;
 use App\Http\Controllers\OverviewController;
@@ -77,6 +78,7 @@ Route::group(['middleware' => ['admin.auth'], 'prefix' => 'admin'], function() {
     Route::get("add-overview", [OverviewController::class, "overview"]);
     Route::get("add-workstream", [WorkstreamController::class, "workstream"]);
     Route::get("add-network", [NetworkController::class, "network"]);
+    Route::get("add-Working_Group_Participation", [MemberController::class, "member"]);
 });
  
 Route::get('/download-prospectus', function () {
@@ -153,3 +155,11 @@ Route::get('/network/{id}', [NetworkController::class, 'show'])->name('network.s
 Route::post('/network/{id}', [NetworkController::class, 'update'])->name('network.update');
 //to delet network
 Route::post('/delete-network', [NetworkController::class, 'deletenetwork'])->name('delete.network');
+//to add member data
+Route::post('/member/store', [MemberController::class, 'store'])->name('member.store');
+//to get member data
+Route::get('/member/{id}', [MemberController::class, 'show'])->name('member.show');
+// Update member data
+Route::post('/member/{id}', [MemberController::class, 'update'])->name('member.update');
+//to delet member
+Route::post('/delete-member', [MemberController::class, 'deletemember'])->name('delete.member');
