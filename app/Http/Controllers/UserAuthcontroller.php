@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Highlight;
+use App\Models\Networks;
+use App\Models\Overview;
+use App\Models\workstream;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
@@ -132,8 +135,11 @@ public function logout() {
      
      public function home(){ 
          $user = Auth::user();      
-         $highlights = Highlight::all();   
-         return view('userpages.home',compact('user','highlights'));
+         $highlights = Highlight::all();  
+         $overviews = Overview::all(); 
+         $workstreams = workstream::all();
+         $networks = Networks::all();
+         return view('userpages.home',compact('user','highlights','overviews','workstreams','networks'));
      }
  
      public function admin(){ 

@@ -121,6 +121,16 @@ animation: cssAnimation 0s ease-in 20s forwards;
     display: block;
     margin-top: 5px; 
 }
+@media (max-width: 768px) {
+    .rest-of-words {
+        margin-left: 10px; 
+        margin-top: 15px;  
+    }
+}
+.first-15-words {
+        margin-left: 10px; 
+        margin-top: 25px;  
+    }
 
     </style>
     

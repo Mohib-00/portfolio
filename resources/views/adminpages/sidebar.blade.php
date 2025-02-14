@@ -25,6 +25,15 @@
           <li><a href="/admin/messages"><i class="fa fa-comment white_color"></i><span>Messages</span></a></li>
           <li><a href="/admin/add-banner-details"><i class="fa fa-comment white_color"></i><span>Add Banner</span></a></li>
           <li><a href="/admin/add-highlight"><i class="fa fa-comment white_color"></i><span>Add Highlight</span></a></li>
+          <li><a href="/admin/add-overview"><i class="fa fa-comment white_color"></i><span>Add Overview</span></a></li>
+          <li>
+            <a href="#elemen" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-cog yellow_color"></i><span>What We Do</span></a>
+            <ul class="collapse list-unstyled" id="elemen">
+               <li><a href="/admin/add-workstream"> <span>Workstreams</span></a></li>
+               <li><a href="/admin/add-network"> <span>Leveraging Our Networks</span></a></li>
+            </ul>
+         </li>
+
 
           <li>
              <a href="#element" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-cog yellow_color"></i><span>Settings</span></a>

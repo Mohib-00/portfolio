@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\Banner;
 use App\Models\Setting;
 use Illuminate\Support\ServiceProvider;
 use App\Models\Message;
@@ -27,10 +28,16 @@ class AppServiceProvider extends ServiceProvider
             'about_paragraph' => '',
             'image_1' => '',
         ]);
+        $banners = Banner::first() ?? new Banner([
+            'heading' => '',
+            'paragraph' => '',
+            'image' => '',
+        ]);
     
         view()->share([
             'count' => $count,
             'settings' => $settings,
+            'banners' => $banners,
         ]);
     }
 }
