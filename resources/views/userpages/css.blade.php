@@ -97,3 +97,30 @@ animation: cssAnimation 0s ease-in 20s forwards;
 
    </style>
      <style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style>
+     <style>
+      .highlights-wrapper {
+        display: flex;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+    
+      .highlights-wrapper::-webkit-scrollbar {
+        display: none;
+      }
+    
+      .highlight-item {
+        flex: 0 0 auto; 
+        margin-right: 16px; 
+      }
+      .first-15-words {
+    display: inline;
+}
+
+.rest-of-words {
+    display: block;
+    margin-top: 5px; 
+}
+
+    </style>
+    

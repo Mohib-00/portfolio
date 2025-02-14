@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BannerController;
+use App\Http\Controllers\HighlightController;
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\ProjectsController;
 use App\Http\Controllers\RegisterController;
@@ -69,6 +70,8 @@ Route::group(['middleware' => ['admin.auth'], 'prefix' => 'admin'], function() {
     Route::get("messages", [MessageController::class, "message"]);
     Route::get("website-settings", [SettingsController::class, "websitesettings"]);
     Route::get("add-banner-details", [BannerController::class, "addbannerdetails"]);
+    Route::get("add-highlight", [HighlightController::class, "highlight"]);
+
 });
  
 Route::get('/download-prospectus', function () {
@@ -113,3 +116,11 @@ Route::get('/banner/{id}', [BannerController::class, 'show'])->name('banner.show
 Route::post('/banner/{id}', [BannerController::class, 'update'])->name('banner.update');
 //to delet banner
 Route::post('/delete-banner', [BannerController::class, 'deletebanner'])->name('delete.banner');
+//to add highlight data
+Route::post('/highlight/store', [HighlightController::class, 'store'])->name('highlight.store');
+//to get highlight data
+Route::get('/highlight/{id}', [HighlightController::class, 'show'])->name('highlight.show');
+// Update highlight data
+Route::post('/highlight/{id}', [HighlightController::class, 'update'])->name('highlight.update');
+//to delet highlight
+Route::post('/delete-highlight', [HighlightController::class, 'deletehighlight'])->name('delete.highlight');

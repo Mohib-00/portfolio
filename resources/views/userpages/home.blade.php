@@ -20,7 +20,6 @@
     <div class="components mx-auto">
 
         @include('userpages.section3')
-        @include('userpages.section4')
         @include('userpages.section5')
         @include('userpages.section6')
         @include('userpages.section7')

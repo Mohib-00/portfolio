@@ -24,6 +24,8 @@
           <li><a href="/admin/users"><i class="fa fa-users orange_color"></i> <span>Users</span></a></li>
           <li><a href="/admin/messages"><i class="fa fa-comment white_color"></i><span>Messages</span></a></li>
           <li><a href="/admin/add-banner-details"><i class="fa fa-comment white_color"></i><span>Add Banner</span></a></li>
+          <li><a href="/admin/add-highlight"><i class="fa fa-comment white_color"></i><span>Add Highlight</span></a></li>
+
           <li>
              <a href="#element" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-cog yellow_color"></i><span>Settings</span></a>
              <ul class="collapse list-unstyled" id="element">

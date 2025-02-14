@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Highlight;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
@@ -130,8 +131,9 @@ public function logout() {
  
      
      public function home(){ 
-         $user = Auth::user();         
-         return view('userpages.home',compact('user'));
+         $user = Auth::user();      
+         $highlights = Highlight::all();   
+         return view('userpages.home',compact('user','highlights'));
      }
  
      public function admin(){ 
