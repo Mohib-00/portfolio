@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\AddMember;
 use App\Models\Highlight;
 use App\Models\Member;
 use App\Models\Networks;
@@ -141,8 +142,8 @@ public function logout() {
          $workstreams = workstream::all();
          $networks = Networks::all();
          $groupmembers = Member::all();
-
-         return view('userpages.home',compact('user','highlights','overviews','workstreams','networks','groupmembers'));
+         $members = AddMember::all();
+         return view('userpages.home',compact('user','highlights','overviews','workstreams','networks','groupmembers','members'));
      }
  
      public function admin(){ 

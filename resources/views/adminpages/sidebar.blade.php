@@ -23,12 +23,14 @@
            
           <li><a href="/admin/users"><i class="fa fa-users orange_color"></i> <span>Users</span></a></li>
           <li><a href="/admin/messages"><i class="fa fa-comment white_color"></i><span>Messages</span></a></li>
-          <li><a href="/admin/add-banner-details"><i class="fa fa-comment white_color"></i><span>Add Banner</span></a></li>
-          <li><a href="/admin/add-highlight"><i class="fa fa-comment white_color"></i><span>Add Highlight</span></a></li>
-          <li><a href="/admin/add-overview"><i class="fa fa-comment white_color"></i><span>Add Overview</span></a></li>
-          <li><a href="/admin/add-Working_Group_Participation"><i class="fa fa-comment white_color"></i><span>Group Member</span></a></li>
+          <li><a href="/admin/add-banner-details"><i class="fa fa-flag green_color"></i><span>Add Banner</span></a></li>
+          <li><a href="/admin/add-highlight"><i style="color:grey" class="fa fa-bullhorn"></i><span>Add Highlight</span></a></li>
+          <li><a href="/admin/add-overview"><i style="color:brown" class="fa fa-trophy"></i><span>Add Overview</span></a></li>
+          <li><a href="/admin/add-Working_Group_Participation"><i style="color:purple" class="fa fa-user-plus"></i><span>Group Member</span></a></li>
+          <li><a href="/admin/add-members"><i style="color:blue" class="fa fa-user"></i><span>Add Member</span></a></li>
+
           <li>
-            <a href="#elemen" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-cog yellow_color"></i><span>What We Do</span></a>
+            <a href="#elemen" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i style="color:crimson" class="fa fa-globe"></i><span>What We Do</span></a>
             <ul class="collapse list-unstyled" id="elemen">
                <li><a href="/admin/add-workstream"> <span>Workstreams</span></a></li>
                <li><a href="/admin/add-network"> <span>Leveraging Our Networks</span></a></li>
