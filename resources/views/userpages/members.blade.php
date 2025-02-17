@@ -41,66 +41,26 @@
             <article class="post-107 page type-page status-publish hentry" id="post-107">
               <div class="components mx-auto">
     
-                <div class="flexible-columns content-section container-fluid bottom-padding-none">
-                  <div class="content-section-inner default-padding default">
-                    <div class="col-12 pl-0 pr-0">
-                      <div class="row">
-                        <div class="col-12 col-md-6">
-                          <p class="lead">IGCC is the leading network of institutional investors mitigating the risks and seizing the opportunities of the global transition to net zero.</p>
-                        </div>
-                        <div class="col-12 col-md-6">
-                          <p class="lead">Members include our countries leading;</p>
-                          <ul>
-                            <li class="lead">superannuation funds,</li>
-                            <li class="lead">fund managers,</li>
-                            <li class="lead">asset consultants,</li>
-                            <li class="lead">brokers, and</li>
-                            <li class="lead">investment industry associations.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                
     
-                <div class="featured-stat content-section container-fluid top-padding-none bottom-padding-none">
-                  <div class="content-section-inner default-padding pr-md-4 pr-lg-0 grey">
-                    <div class="row mr-lg-0 align-items-stretch">
-                      <div class="col-12">
-                        <div class="limit-width"></div>
-                        <div class="mt-md-4 pt-lg-2 row">
-                          <div class="col-md-4 d-flex d-md-block mb-3">
-                            <h2 class="large-statistic pl-0 col-5 col-lg-12">103</h2>
-                            <div class="description pl-0 col-5 col-lg-12">members across Australia and New Zealand</div>
-                          </div>
-                          <div class="col-md-4 d-flex d-md-block mb-3">
-                            <h2 class="large-statistic pl-0 col-5 col-lg-12">$35 trillion+</h2>
-                            <div class="description pl-0 col-5 col-lg-12">members' global AUM</div>
-                          </div>
-                          <div class="col-md-4 d-flex d-md-block mb-3">
-                            <h2 class="large-statistic pl-0 col-5 col-lg-12">14.8 million+</h2>
-                            <div class="description pl-0 col-5 col-lg-12">members' beneficiaries across Australia &amp; New Zealand</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-    
+                
                 <div class="standard-content content-section container-fluid align-right bottom-padding-none top-padding-large">
                   <div class="content-section-inner default-padding default">
                     <div class="row mr-lg-0 align-items-stretch">
                       <div class="col-12">
                         <h2>Full members</h2>
                         <p>Asset owners including superannuation funds, and asset managers<br></p>
+                        @if ($members->isNotEmpty())
                         <div class="row">
+                          @foreach($members as $member)
                           <div class="col-4 col-sm-3 col-md-2 px-3 px-sm-4 px-md-4">
                             <a href="/" target="_blank">
-                              <img src="./Our members - Investor Group on Climate Change_files/Abrdn-238x244.jpg" alt="">
+                              <img src="{{ asset('images/' . $member->image) }}" alt="">
                             </a>
                           </div>
-                          <div class="col-4 col-sm-3 col-md-2 px-3 px-sm-4 px-md-4"></div>
+                          @endforeach
                         </div>
+                        @endif
                         <p></p>
                         <p>&nbsp;</p>
                       </div>

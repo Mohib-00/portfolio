@@ -3,7 +3,7 @@
    <head>
       @include('adminpages.css')
    </head>
-   <body class="dashboard dashboard_1">
+   <body class="dashboard dashboard_1" style="overflow-y: auto;height:920px">
       <div class="full_container">
          <div class="inner_container">
             @include('adminpages.sidebar')

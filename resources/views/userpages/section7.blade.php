@@ -1,4 +1,4 @@
-@if ($groupmembers->isNotEmpty())
+@if ($members->isNotEmpty())
 <div class="page-supporter content-section container-fluid content-end">
     <div class="content-section-inner default-padding default">
       <div class="row">

@@ -169,8 +169,9 @@ public function logout() {
         return view('userpages.contact',compact('user'));
     }
     public function allmembers(){ 
-        $user = Auth::user();         
-        return view('userpages.members',compact('user'));
+        $user = Auth::user();    
+        $members = AddMember::all();     
+        return view('userpages.members',compact('user','members'));
     }
 
     public function teams(){ 
