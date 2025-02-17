@@ -28,6 +28,10 @@
           <li><a href="/admin/add-overview"><i style="color:brown" class="fa fa-trophy"></i><span>Add Overview</span></a></li>
           <li><a href="/admin/add-Working_Group_Participation"><i style="color:purple" class="fa fa-user-plus"></i><span>Group Member</span></a></li>
           <li><a href="/admin/add-members"><i style="color:blue" class="fa fa-user"></i><span>Add Member</span></a></li>
+          <li><a href="/admin/add-team"><i style="color:gold" class="fa fa-users"></i><span>Add Team</span></a></li>
+          <li><a href="/admin/add-news"><i style="color:gold" class="fa fa-users"></i><span>Add News</span></a></li>
+
+
 
           <li>
             <a href="#elemen" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i style="color:crimson" class="fa fa-globe"></i><span>What We Do</span></a>

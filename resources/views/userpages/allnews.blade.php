@@ -149,25 +149,31 @@
 							  <div class="search-filter-result-item">
 								<div class="px-3 px-md-0">
 								  <div class="row px-3 py-5 white border-bottom">
+
 									<div class="row">
+										@if ($news->isNotEmpty())
+										@foreach($news->take(3) as $new)
 									  <div class="col-12 d-flex px-0 px-md-3">
 										<div class="mr-2 mr-md-4 img-container">
-										  <img class="small-thumbnail" src="./News - Investor Group on Climate Change_files/Screenshot-2025-01-24-at-12.49.47 PM-300x213.png" alt="">
+										  <img class="small-thumbnail" src="{{ asset('images/' . $new->image) }}" alt="">
 										</div>
 										<div>
 										  <h3>
-											<a href="/">The Net Zero Investment Framework: New Implementation Guidance for Objectives and Targets</a>
+											<a href="/">{{$new->heading}}</a>
 										  </h3>
-										  <p>24 January 2025</p>
-										  <p>
-											New implementation guidance is now available to assist asset owners and managers in effectively using the Net Zero Investment Framework (NZIF) to set and achieve net zero objectives and targets across various asset classes.
+										  <p><div class="date">{{ \Carbon\Carbon::parse($new->created_at)->format('j F Y') }}</div>
 										  </p>
-										  <div class="mt-4 d-none d-md-block">
-											<a class="badge badge-light" href="/">Paris-Aligned Asset Owners Initiative (PAAO)</a>
-										  </div>
+										  <p>
+											{{$new->paragraph}}
+										  </p>
+										 
 										</div>
 									  </div>
+									  @endforeach
+                                      @endif
+
 									</div>
+
 								  </div>
 								</div>
 							  </div>
@@ -185,8 +191,6 @@
 	  </div>
 	  
 @include('userpages.footer')
-
-
 
 <script src="./News - Investor Group on Climate Change_files/atcb.min.js.download" id="add-to-calendar-button-js" async="" data-wp-strategy="async"></script>
 <script src="./News - Investor Group on Climate Change_files/jquery.fitvids.js.download" id="fitvids-js"></script>

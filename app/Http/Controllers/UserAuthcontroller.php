@@ -6,7 +6,9 @@ use App\Models\AddMember;
 use App\Models\Highlight;
 use App\Models\Member;
 use App\Models\Networks;
+use App\Models\News;
 use App\Models\Overview;
+use App\Models\Team;
 use App\Models\workstream;
 use Illuminate\Http\Request;
 use App\Models\User;
@@ -143,7 +145,9 @@ public function logout() {
          $networks = Networks::all();
          $groupmembers = Member::all();
          $members = AddMember::all();
-         return view('userpages.home',compact('user','highlights','overviews','workstreams','networks','groupmembers','members'));
+         $teams = Team::all();
+         $news = News::all();
+         return view('userpages.home',compact('user','highlights','overviews','workstreams','networks','groupmembers','members','teams','news'));
      }
  
      public function admin(){ 
@@ -175,13 +179,15 @@ public function logout() {
     }
 
     public function teams(){ 
-        $user = Auth::user();         
-        return view('userpages.team',compact('user'));
+        $user = Auth::user(); 
+        $teams = Team::all();        
+        return view('userpages.team',compact('user','teams'));
     }
 
     public function news(){ 
-        $user = Auth::user();         
-        return view('userpages.allnews',compact('user'));
+        $user = Auth::user(); 
+        $news = News::all();        
+        return view('userpages.allnews',compact('user','news'));
     }
     public function board(){ 
         $user = Auth::user();         

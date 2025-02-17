@@ -6,10 +6,12 @@ use App\Http\Controllers\MemberController;
 use App\Http\Controllers\MembersController;
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\NetworkController;
+use App\Http\Controllers\NewsController;
 use App\Http\Controllers\OverviewController;
 use App\Http\Controllers\ProjectsController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\SettingsController;
+use App\Http\Controllers\TeamController;
 use App\Http\Controllers\UserAuthcontroller;
 use App\Http\Controllers\WorkstreamController;
 use Illuminate\Support\Facades\Route;
@@ -81,6 +83,8 @@ Route::group(['middleware' => ['admin.auth'], 'prefix' => 'admin'], function() {
     Route::get("add-network", [NetworkController::class, "network"]);
     Route::get("add-Working_Group_Participation", [MemberController::class, "member"]);
     Route::get("add-members", [MembersController::class, "addmembers"]);
+    Route::get("add-team", [TeamController::class, "team"]);
+    Route::get("add-news", [NewsController::class, "khabar"]);
 });
  
 Route::get('/download-prospectus', function () {
@@ -165,8 +169,6 @@ Route::get('/member/{id}', [MemberController::class, 'show'])->name('member.show
 Route::post('/member/{id}', [MemberController::class, 'update'])->name('member.update');
 //to delet member
 Route::post('/delete-member', [MemberController::class, 'deletemember'])->name('delete.member');
-
-
 //to add addmember data
 Route::post('/addmember/store', [MembersController::class, 'store'])->name('addmember.store');
 //to get addmember data
@@ -175,3 +177,19 @@ Route::get('/addmember/{id}', [MembersController::class, 'show'])->name('addmemb
 Route::post('/addmember/{id}', [MembersController::class, 'update'])->name('addmember.update');
 //to delet addmember
 Route::post('/delete-addmember', [MembersController::class, 'deleteaddmember'])->name('delete.addmember');
+//to add team data
+Route::post('/team/store', [TeamController::class, 'store'])->name('team.store');
+//to get team data
+Route::get('/team/{id}', [TeamController::class, 'show'])->name('team.show');
+// Update team data
+Route::post('/team/{id}', [TeamController::class, 'update'])->name('team.update');
+//to delet team
+Route::post('/delete-team', [TeamController::class, 'deleteteam'])->name('delete.team');
+//to add khabar data
+Route::post('/khabar/store', [NewsController::class, 'store'])->name('khabar.store');
+//to get khabar data
+Route::get('/khabar/{id}', [NewsController::class, 'show'])->name('khabar.show');
+// Update khabar data
+Route::post('/khabar/{id}', [NewsController::class, 'update'])->name('khabar.update');
+//to delet khabar
+Route::post('/delete-khabar', [NewsController::class, 'deletekhabar'])->name('delete.khabar');
