@@ -10,6 +10,7 @@ use App\Models\Member;
 use App\Models\Networks;
 use App\Models\News;
 use App\Models\Overview;
+use App\Models\Resource;
 use App\Models\Section1;
 use App\Models\Section2;
 use App\Models\Team;
@@ -211,8 +212,9 @@ public function logout() {
         return view('userpages.whatwedo',compact('user','section1s','section2s'));
     }
     public function resources(){ 
-        $user = Auth::user();         
-        return view('userpages.resources',compact('user'));
+        $user = Auth::user();   
+        $resources = Resource::all();
+        return view('userpages.resources',compact('user','resources'));
     }
     public function joinus(){ 
         $user = Auth::user();         

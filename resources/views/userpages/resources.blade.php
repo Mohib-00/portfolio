@@ -160,17 +160,21 @@
                                 <div class="px-3 px-md-0">
                                   <div class="row px-3 py-5 white border-bottom">
                                     <div class="row">
+                                      @if ($resources->isNotEmpty())
+                                      @foreach($resources as $resource)
                                       <div class="col-12 d-flex px-0 px-md-3">
                                         <div>
-                                          <h3>The Net Zero Investment Framework: New Implementation Guidance for Objectives and Targets</h3>
-                                          <p>Guide | IIGCC, IGCC, AIGCC, Ceres | 24 January 2025</p>
-                                          <p>New implementation guidance is now available to assist asset owners and managers in effectively using the Net Zero Investment Framework (NZIF) to set and achieve net zero objectives and targets across various asset classes.</p>
+                                          <h3>{{$resource->heading}}</h3>
+                                          <p>{{$resource->paragraph}}</p>
                                            <div class="mt-4 d-none d-md-block">
-                                            <a class="badge badge-light" href="/">Australia</a>
+                                            <a class="badge badge-light" href="/">{{$resource->name}}</a>
                                             
                                           </div>
                                         </div>
                                       </div>
+                                      @endforeach
+                                      @endif
+
                                     </div>
                                   </div>
                                 </div>

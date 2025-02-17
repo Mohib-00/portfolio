@@ -12,6 +12,7 @@ use App\Http\Controllers\NewsController;
 use App\Http\Controllers\OverviewController;
 use App\Http\Controllers\ProjectsController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\ResourceController;
 use App\Http\Controllers\Section1Controller;
 use App\Http\Controllers\Section2Controller;
 use App\Http\Controllers\SettingsController;
@@ -93,6 +94,7 @@ Route::group(['middleware' => ['admin.auth'], 'prefix' => 'admin'], function() {
     Route::get("add-initiative", [InitiativeController::class, "initiative"]);
     Route::get("add-section-1", [Section1Controller::class, "section1"]);
     Route::get("add-section-2", [Section2Controller::class, "section2"]);
+    Route::get("add-resource", [ResourceController::class, "resource"]);
 });
  
 Route::get('/download-prospectus', function () {
@@ -233,3 +235,11 @@ Route::get('/section2/{id}', [Section2Controller::class, 'show'])->name('section
 Route::post('/section2/{id}', [Section2Controller::class, 'update'])->name('section2.update');
 //to delet section2
 Route::post('/delete-section2', [Section2Controller::class, 'deletesection2'])->name('delete.section2');
+//to add resource data
+Route::post('/resource/store', [ResourceController::class, 'store'])->name('resource.store');
+//to get resource data
+Route::get('/resource/{id}', [ResourceController::class, 'show'])->name('resource.show');
+// Update resource data
+Route::post('/resource/{id}', [ResourceController::class, 'update'])->name('resource.update');
+//to delet resource
+Route::post('/delete-resource', [ResourceController::class, 'deleteresource'])->name('delete.resource');
