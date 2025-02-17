@@ -170,7 +170,7 @@
           <h2>Our Three Workstreams and Their Impact</h2>
             <div class="row">
               @if ($section1s->isNotEmpty())
-              @foreach($section1s->take(3) as $section1)
+              @foreach($section1s as $section1)
                 <div class="col-12 col-md-6">
                   <div class="row">
                     <div class="col-3">
@@ -179,7 +179,7 @@
 
                     <div class="col-9 pl-0">
                       <h5>{{$section1->heading}}</h5>
-                      <p>{{$section1->paragraph}}<br>
+                      <p>{{$section1->paragraph}}<p>
                     </div>
                   </div>
                 </div>
@@ -218,60 +218,28 @@
 
         <div class="col-12">
           <h4 class="smaller-width">Connecting Investors With Global Climate Initiatives and Tools</h4>
-<p class="smaller-width">We guide investors through the international initiatives and tools which have been set up to help align capital flows to the goals of the Paris Agreement.</p>
-
-                      <div class="row">
-                              <div class="col-12 col-md-6">
-
+            <p class="smaller-width">We guide investors through the international initiatives and tools which have been set up to help align capital flows to the goals of the Paris Agreement.</p>
+              <div class="row">
+                @if ($section2s->isNotEmpty())
+                @foreach($section2s as $section2)
+                <div class="col-12 col-md-6">
                   <div class="row">
-
                     <div class="col-3">
-
-                                                                                          <img class="rounded-circle" src="./What we do - Investor Group on Climate Change_files/noun-paris-1573488-405426.webp" alt="">
-                                          </div>
-
-                    <div class="col-9 pl-0">
-                      <h5>Paris Aligned Investor Initiatives</h5>
-<p>We co-founded and co-manage the Net Zero Asset Managers initiative (NZAM) and the Paris Aligned Asset Owners (PAAO) initiative. These provide asset managers and asset owners respectively with tools for making commitments, making and tracking progress in alignment to the UN-backed Race to Zero and Paris Agreement. They focus on portfolio management and capital allocation.</p>
+                      <img class="rounded-circle" src="{{ asset('images/' . $section2->image) }}" alt="">
                     </div>
 
-                  </div>
-                </div>
-                              <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                                                          <img class="rounded-circle" src="./What we do - Investor Group on Climate Change_files/CA100_mark.png" alt="">
-                                          </div>
-
                     <div class="col-9 pl-0">
-                      <h5>Climate Action 100+</h5>
-<p>Climate Action 100+ is at the heart of our corporate engagement program. It is the world’s largest initiative to support investors engaging with heavy-emitting companies.</p>
+                      <h5>{{$section2->heading}}</h5>
+                      <p>{{$section2->paragraph}}<p>
                     </div>
-
                   </div>
                 </div>
-                              <div class="col-12 col-md-6">
+                @endforeach
+                @endif
 
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                                                          <img class="rounded-circle" src="./What we do - Investor Group on Climate Change_files/IA_Mark.png" alt="">
-                                          </div>
-
-                    <div class="col-9 pl-0">
-                      <h5>Investor Agenda</h5>
-<p>With Investor Agenda, we produced the Investor Climate Action Plan (ICAP) tool, which provides a framework for investors to develop and progress a comprehensive approach to climate risks and opportunities. It covers investment, corporate engagement, disclosures, and policy advocacy.</p>
-                    </div>
-
-                  </div>
-                </div>
               </div>
-  
-        </div>
+            </div>
+
       </div>
     </div>
   </div>

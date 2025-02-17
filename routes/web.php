@@ -13,6 +13,7 @@ use App\Http\Controllers\OverviewController;
 use App\Http\Controllers\ProjectsController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\Section1Controller;
+use App\Http\Controllers\Section2Controller;
 use App\Http\Controllers\SettingsController;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\UserAuthcontroller;
@@ -91,6 +92,7 @@ Route::group(['middleware' => ['admin.auth'], 'prefix' => 'admin'], function() {
     Route::get("add-about", [AboutController::class, "about"]);
     Route::get("add-initiative", [InitiativeController::class, "initiative"]);
     Route::get("add-section-1", [Section1Controller::class, "section1"]);
+    Route::get("add-section-2", [Section2Controller::class, "section2"]);
 });
  
 Route::get('/download-prospectus', function () {
@@ -223,3 +225,11 @@ Route::get('/section1/{id}', [Section1Controller::class, 'show'])->name('section
 Route::post('/section1/{id}', [Section1Controller::class, 'update'])->name('section1.update');
 //to delet section1
 Route::post('/delete-section1', [Section1Controller::class, 'deletesection1'])->name('delete.section1');
+//to add section2 data
+Route::post('/section2/store', [Section2Controller::class, 'store'])->name('section2.store');
+//to get section2 data
+Route::get('/section2/{id}', [Section2Controller::class, 'show'])->name('section2.show');
+// Update section2 data
+Route::post('/section2/{id}', [Section2Controller::class, 'update'])->name('section2.update');
+//to delet section2
+Route::post('/delete-section2', [Section2Controller::class, 'deletesection2'])->name('delete.section2');

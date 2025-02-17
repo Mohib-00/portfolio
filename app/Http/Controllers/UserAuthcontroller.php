@@ -11,6 +11,7 @@ use App\Models\Networks;
 use App\Models\News;
 use App\Models\Overview;
 use App\Models\Section1;
+use App\Models\Section2;
 use App\Models\Team;
 use App\Models\workstream;
 use Illuminate\Http\Request;
@@ -206,7 +207,8 @@ public function logout() {
     public function wedo(){ 
         $user = Auth::user();  
         $section1s = Section1::all();
-        return view('userpages.whatwedo',compact('user','section1s'));
+        $section2s = Section2::all();
+        return view('userpages.whatwedo',compact('user','section1s','section2s'));
     }
     public function resources(){ 
         $user = Auth::user();         
@@ -218,8 +220,9 @@ public function logout() {
     }
 
     public function memberships(){ 
-        $user = Auth::user();         
-        return view('userpages.membership',compact('user'));
+        $user = Auth::user();   
+        $teams = Team::all();      
+        return view('userpages.membership',compact('user','teams'));
     }
     public function supportourwork(){ 
         $user = Auth::user();         

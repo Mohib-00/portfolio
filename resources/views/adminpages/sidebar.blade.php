@@ -46,6 +46,7 @@
                <li><a href="/admin/add-workstream"> <span>Workstreams</span></a></li>
                <li><a href="/admin/add-network"> <span>Leveraging Our Networks</span></a></li>
                <li><a href="/admin/add-section-1"> <span>Section 1</span></a></li>
+               <li><a href="/admin/add-section-2"> <span>Section 2</span></a></li>
             </ul>
          </li>
 
