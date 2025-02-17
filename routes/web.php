@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\BannerController;
 use App\Http\Controllers\HighlightController;
+use App\Http\Controllers\InitiativeController;
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\MembersController;
 use App\Http\Controllers\MessageController;
@@ -10,6 +12,7 @@ use App\Http\Controllers\NewsController;
 use App\Http\Controllers\OverviewController;
 use App\Http\Controllers\ProjectsController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\Section1Controller;
 use App\Http\Controllers\SettingsController;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\UserAuthcontroller;
@@ -85,6 +88,9 @@ Route::group(['middleware' => ['admin.auth'], 'prefix' => 'admin'], function() {
     Route::get("add-members", [MembersController::class, "addmembers"]);
     Route::get("add-team", [TeamController::class, "team"]);
     Route::get("add-news", [NewsController::class, "khabar"]);
+    Route::get("add-about", [AboutController::class, "about"]);
+    Route::get("add-initiative", [InitiativeController::class, "initiative"]);
+    Route::get("add-section-1", [Section1Controller::class, "section1"]);
 });
  
 Route::get('/download-prospectus', function () {
@@ -193,3 +199,27 @@ Route::get('/khabar/{id}', [NewsController::class, 'show'])->name('khabar.show')
 Route::post('/khabar/{id}', [NewsController::class, 'update'])->name('khabar.update');
 //to delet khabar
 Route::post('/delete-khabar', [NewsController::class, 'deletekhabar'])->name('delete.khabar');
+//to add about data
+Route::post('/about/store', [AboutController::class, 'store'])->name('about.store');
+//to get about data
+Route::get('/about/{id}', [AboutController::class, 'show'])->name('about.show');
+// Update about data
+Route::post('/about/{id}', [AboutController::class, 'update'])->name('about.update');
+//to delet about
+Route::post('/delete-about', [AboutController::class, 'deleteabout'])->name('delete.about');
+//to add initiative data
+Route::post('/initiative/store', [InitiativeController::class, 'store'])->name('initiative.store');
+//to get initiative data
+Route::get('/initiative/{id}', [InitiativeController::class, 'show'])->name('initiative.show');
+// Update initiative data
+Route::post('/initiative/{id}', [InitiativeController::class, 'update'])->name('initiative.update');
+//to delet initiative
+Route::post('/delete-initiative', [InitiativeController::class, 'deleteinitiative'])->name('delete.initiative');
+//to add section1 data
+Route::post('/section1/store', [Section1Controller::class, 'store'])->name('section1.store');
+//to get section1 data
+Route::get('/section1/{id}', [Section1Controller::class, 'show'])->name('section1.show');
+// Update section1 data
+Route::post('/section1/{id}', [Section1Controller::class, 'update'])->name('section1.update');
+//to delet section1
+Route::post('/delete-section1', [Section1Controller::class, 'deletesection1'])->name('delete.section1');

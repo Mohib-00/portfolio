@@ -64,86 +64,33 @@
 
         <div class="col-12">
           <p class="lead mb-5">We are the leading network for Australian and New Zealand investors to understand and respond to the risks and opportunities of climate change.</p>
+              <div class="row">
 
-                      <div class="row">
-                              <div class="col-12 col-md-6">
-
+                @if ($abouts->isNotEmpty())
+                @foreach($abouts as $about)
+                <div class="col-12 col-md-6">
                   <div class="row">
-
-                    <div class="col-3">
-
-                                                                                          <img class="rounded-circle" src="./About us - Investor Group on Climate Change_files/members.svg" alt="">
-                                          </div>
-
+                     <div class="col-3">
+                        <img class="rounded-circle" src="{{ asset('images/' . $about->image) }}" alt="">
+                      </div>
                     <div class="col-9 pl-0">
-                      <h5>Our members manage more than $35 trillion globally.</h5>
-<p>Our members have more than $35 trillion in global AUM, and $5 trillion in local AUM.</p>
-<p>They include our countries’ largest superannuation and retail funds, specialist investors and advisory groups, and their beneficiaries include more than 14.8 million Australians, and millions more New Zealanders.</p>
+                      <h5>{{$about->heading}}</h5>
+                      <p>{{$about->paragraph}}</p>
                     </div>
-
                   </div>
                 </div>
-                              <div class="col-12 col-md-6">
+                @endforeach
+                @endif
 
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                                                          <img class="rounded-circle" src="./About us - Investor Group on Climate Change_files/nfp.svg" alt="">
-                                          </div>
-
-                    <div class="col-9 pl-0">
-                      <h5>We are a not-for-profit organisation.</h5>
-<p>Our work is funded by members’ fees, philanthropy, partnerships, and sponsorship from supporters who understand the power of capital to support climate action.</p>
-                    </div>
-
-                  </div>
-                </div>
-                              <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                                                          <img class="rounded-circle" src="./About us - Investor Group on Climate Change_files/AIGCC_Mark_IGCC-Colour-e1691623037225.webp" alt="">
-                                          </div>
-
-                    <div class="col-9 pl-0">
-                      <h5>We are the parent of The Asia Investor Group on Climate Change.</h5>
-<p>We launched AIGCC, which operates across Asia under our governance structure and is therefore within IGCC’s legal entity and constitution.</p>
-<p><a href="/">AIGCC</a> has its own members, board sub-committee, and activities, but we share a CEO and some executives, and leverage each others work and expertise.</p>
-                    </div>
-
-                  </div>
-                </div>
-                              <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                                                          <img class="rounded-circle" src="./About us - Investor Group on Climate Change_files/collaborate.svg" alt="">
-                                          </div>
-
-                    <div class="col-9 pl-0">
-                      <h5>We are the regional connection to global investor networks</h5>
-<p>We co-ordinate with peer networks via the Paris Aligned Investor Initiative, which comprises IGCC in Australia/New Zealand, <a href="/">AIGCC</a> in Asia, the <a href="/">Institutional Investors Group on Climate Change</a>&nbsp;in Europe, and <a href="/">Ceres</a> in North America.</p>
-<p>We also run certain collaborative initiatives with global investor networks <a href="/">UN Environment Program Finance Initiative</a> as Investor Agenda.</p>
-<p>&nbsp;</p>
-                    </div>
-
-                  </div>
-                </div>
-                          </div>
-          
-        </div>
+              </div>
+            </div>
 
       </div>
     </div>
   </div>
 </div>
                                 
-<div style="background-image: url(https://igcc.org.au/wp-content/uploads/2023/03/about-us-cta-1280x657.png)" class="standard-content standard-cta py-5 py-lg-9">
+<div  class="standard-content standard-cta py-5 py-lg-9">
   <div class="content-section container-fluid align-center">
     <div class="col-lg-10 px-4 px-md-7 pt-5 pb-4 my-lg-3 mx-auto  white">
       <h3 class="text-moss">Our vision</h3>
@@ -161,85 +108,27 @@
 
         <div class="col-12">
           <h2 class="mb-2">Our International Initiatives</h2>
-<p>We are the co-founder of a set of international initiatives to progress various elements of our mission.</p>
-
-                      <div class="row">
-                              <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                 <a href="/" target="">
-                                                      <img class="rounded-circle" src="./About us - Investor Group on Climate Change_files/CA100_mark.png" alt="">
-                                                  </a>
-                                          </div>
+            <p>We are the co-founder of a set of international initiatives to progress various elements of our mission.</p>
+               <div class="row">
+                @if ($initiatives->isNotEmpty())
+                @foreach($initiatives as $initiative)
+                  <div class="col-12 col-md-6">
+                    <div class="row">
+                      <div class="col-3">
+                        <a href="/" target="">
+                          <img class="rounded-circle" src="{{ asset('images/' . $initiative->image) }}" alt="">
+                      </a>
+                      </div>
 
                     <div class="col-9 pl-0">
-                      <h5><a href="/">Climate Action 100+</a></h5>
-<p>Climate Action 100+ is an investor-led initiative to ensure the world’s largest corporate greenhouse gas emitters take necessary action on climate change. It is at the heart of our <a href="https://igcc.org.au/workstream/corporate-engagement/">corporate engagement program</a>.</p>
-<p><a href="/">Go to Climate Action 100+</a></p>
+                      <h5><a href="/">{{$initiative->heading}}</a></h5>
+                       <p>{{$initiative->paragraph}}</p>
                     </div>
-
                   </div>
                 </div>
-                              <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                                                          <a href="/" target="">
-                                                      <img class="rounded-circle" src="./About us - Investor Group on Climate Change_files/NZAM_Mark.webp" alt="">
-                                                  </a>
-                                          </div>
-
-                    <div class="col-9 pl-0">
-                      <h5><a href="/">Net Zero Asset Managers initiative</a></h5>
-<p>The Net Zero Asset Managers initiative (NZAM) aims to galvanise the asset management industry to commit to a goal of net zero emissions. As of December 2022 it has 301 signatories with USD 59 trillion in assets under management.</p>
-<p><a href="/">Go to the Net Zero Asset Managers initiative</a></p>
-                    </div>
-
-                  </div>
-                </div>
-                              <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                                                          <img class="rounded-circle" src="./About us - Investor Group on Climate Change_files/paris-aligned_Mark.png" alt="">
-                                          </div>
-
-                    <div class="col-9 pl-0">
-                      <h5><a href="/">Paris-Aligned Asset Owners initiative</a></h5>
-<p>Under the initiative, asset owners commit to transitioning their investments to achieve net zero portfolio GHG emissions by 2050 or sooner, drawing on the Net Zero Investment Framework.</p>
-<p><a href="/">Go to the Paris-Aligned Asset Owners’ initiative</a></p>
-                    </div>
-
-                  </div>
-                </div>
-                              <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                                                          <a href="/" target="">
-                                                      <img class="rounded-circle" src="./About us - Investor Group on Climate Change_files/IA_Mark.png" alt="">
-                                                  </a>
-                                          </div>
-
-                    <div class="col-9 pl-0">
-                      <h5><a href="/">Investor Agenda</a></h5>
-<p>The initiative publishes the Investor Climate Action Plan (ICAP) framework and resources and co-ordinates global policy advocacy.</p>
-<p><a href="https://theinvestoragenda.org/">Go to the Investor Agenda</a></p>
-                    </div>
-
-                  </div>
-                </div>
-                          </div>
-          
+                @endforeach
+                @endif
+             </div>
         </div>
 
       </div>

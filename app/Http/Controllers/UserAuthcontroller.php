@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\About;
 use App\Models\AddMember;
 use App\Models\Highlight;
+use App\Models\Initiative;
 use App\Models\Member;
 use App\Models\Networks;
 use App\Models\News;
 use App\Models\Overview;
+use App\Models\Section1;
 use App\Models\Team;
 use App\Models\workstream;
 use Illuminate\Http\Request;
@@ -156,8 +159,10 @@ public function logout() {
     }
 
      public function about(){ 
-        $user = Auth::user();         
-        return view('userpages.about',compact('user'));
+        $user = Auth::user();    
+        $abouts = About::all(); 
+        $initiatives = Initiative::all();    
+        return view('userpages.about',compact('user','abouts','initiatives'));
     }
 
     public function portfolio(){ 
@@ -190,16 +195,18 @@ public function logout() {
         return view('userpages.allnews',compact('user','news'));
     }
     public function board(){ 
-        $user = Auth::user();         
-        return view('userpages.board',compact('user'));
+        $user = Auth::user();  
+        $teams = Team::all();       
+        return view('userpages.board',compact('user','teams'));
     }
     public function event(){ 
         $user = Auth::user();         
         return view('userpages.events',compact('user'));
     }
     public function wedo(){ 
-        $user = Auth::user();         
-        return view('userpages.whatwedo',compact('user'));
+        $user = Auth::user();  
+        $section1s = Section1::all();
+        return view('userpages.whatwedo',compact('user','section1s'));
     }
     public function resources(){ 
         $user = Auth::user();         

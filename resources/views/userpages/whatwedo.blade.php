@@ -168,137 +168,34 @@
 
         <div class="col-12">
           <h2>Our Three Workstreams and Their Impact</h2>
-
-                      <div class="row">
-                              <div class="col-12 col-md-6">
-
+            <div class="row">
+              @if ($section1s->isNotEmpty())
+              @foreach($section1s->take(3) as $section1)
+                <div class="col-12 col-md-6">
                   <div class="row">
-
                     <div class="col-3">
-
-                                                                                          <img class="rounded-circle" src="./What we do - Investor Group on Climate Change_files/noun-project-management-1327125-BACDD1_gr.webp" alt="">
-                                          </div>
-
-                    <div class="col-9 pl-0">
-                      <h5>Accelerating Net Zero Investment Practice.</h5>
-<p>This has been the foundation of our work since inception; building our members’ climate capacity, providing forums for collaboration, connecting them to climate expertise and more.<br>
+                      <img class="rounded-circle" src="{{ asset('images/' . $section1->image) }}" alt="">
                     </div>
 
-                  </div>
-                </div>
-                              <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                                                          <img class="rounded-circle" src="./What we do - Investor Group on Climate Change_files/noun-building-1383270-BACDD1_gr.webp" alt="">
-                                          </div>
-
                     <div class="col-9 pl-0">
-                      <h5>Driving Down Emissions From Industry.</h5>
-<p>As co-founders of the Climate Action 100+ initiative, we support investors to engage with heavy-emitting companies in the region and provide credible data, analysis and thought-leadership to help our members in their own direct engagements.<br>
+                      <h5>{{$section1->heading}}</h5>
+                      <p>{{$section1->paragraph}}<br>
                     </div>
-
                   </div>
                 </div>
-                              <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                                                          <img class="rounded-circle" src="./What we do - Investor Group on Climate Change_files/noun-canberra-parliament-house-59768-BACDD1_gr.png" alt="">
-                                          </div>
-
-                    <div class="col-9 pl-0">
-                      <h5>Advocating for Policies That Will Unlock Capital for Climate.</h5>
-<p>With members and broader stakeholders, we influence policy-makers on the crucial legislation to unlock the investment that enables a just and orderly transition to a resilient, net zero economy.<br>
-                    </div>
-
-                  </div>
-                </div>
-                          </div>
-          
+                @endforeach
+                @endif
+              </div>
         </div>
 
       </div>
     </div>
   </div>
 </div>
-                                
-<div class="twocol-icons content-section container-fluid bottom-padding-large content-end bottom-margin">
-  <div class="content-section-inner default-padding default">
-    <div class="col-12 px-0">
-      <div class="row align-items-center">
-
-        <div class="col-12">
-          <h2>Focus Themes Across Our Workstreams</h2>
-
-                      <div class="row">
-                              <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                                                          <a href="/" target="">
-                                                      <img class="rounded-circle" src="./What we do - Investor Group on Climate Change_files/noun-equality-5720943-405426_gr.png" alt="">
-                                                  </a>
-                                          </div>
-
-                    <div class="col-9 pl-0">
-                      <h5><a href="/">A Just Transition</a></h5>
-<p>Social equity must be protected throughout the economic and physical transitions that are underway.</p>
-<p>Social cohesion and support are also essential to investors ability to deliver beneficiaries sustainable returns.</p>
-<p><a class="btn btn-link" href="/">Recent news, resources, and events</a></p>
-                    </div>
-
-                  </div>
-                </div>
-                              <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                                                          <a href="/" target="">
-                                                      <img class="rounded-circle" src="./What we do - Investor Group on Climate Change_files/noun-storms-3181787-405426_gr.webp" alt="">
-                                                  </a>
-                                          </div>
-
-                    <div class="col-9 pl-0">
-                      <h5><a href="/">Physical Risk, Impacts &amp; Resilience</a></h5>
-<p>Building resilience to physical risk has joined emissions reduction as an important climate goal.</p>
-<p>Although governments, investors and companies are starting to understand and act on physical risk, greater action is necessary.</p>
-<p><a class="btn btn-link" href="/">Recent news, resources and events</a></p>
-                    </div>
-
-                  </div>
-                </div>
-                          </div>
-          
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
+  
     
                                 
-<div class="standard-content content-section container-fluid top-padding-large bottom-padding-medium">
-
-  <div class="content-section-inner default-padding  default">
-    <div class="row mr-lg-0 align-items-stretch">
-      <div class="col-12 ">
-        <h4 class="smaller-width">Research, Thought Leadership and Investor Resources</h4>
-<p class="smaller-width">Our publications help set the agenda in public debates, influence government policy, and help our members and stakeholders understand key developments and ideas in climate finance.</p>
-<p><a class="btn btn-link" href="/">Our reports, submissions and briefings.</a></p>
-      </div>
-
-          </div>
-  </div>
-</div>
+ 
                                 
 <div class="standard-content content-section container-fluid  top-padding-large bottom-padding-medium">
 
@@ -307,7 +204,7 @@
       <div class="col-12 ">
         <h4 class="text-deepblue">Masterclasses, Briefings and Monthly Member Meetings</h4>
 <p class="smaller-width">We run a variety of events to help investors stay up-to-date with the latest developments in how climate and finance interact.</p>
-<p><a class="btn btn-link" href="/">Our Events</a></p>
+<p><a class="btn btn-link" href="/our-event">Our Events</a></p>
       </div>
 
           </div>
@@ -372,84 +269,14 @@
 
                   </div>
                 </div>
-                          </div>
-          
+              </div>
+  
         </div>
-
       </div>
     </div>
   </div>
 </div>
-                                
-<div class="twocol-icons content-section container-fluid bottom-margin content-end top-padding-none bottom-padding-large">
-  <div class="content-section-inner default-padding default">
-    <div class="col-12 px-0">
-      <div class="row align-items-center">
-
-        <div class="col-12">
-          <h4>Australian and New Zealand Collaborations:</h4>
-
-                      <div class="row">
-                              <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                                                          <a href="/" target="">
-                                                      <img class="rounded-circle" src="./What we do - Investor Group on Climate Change_files/noun-australia-142843-405426.png" alt="">
-                                                  </a>
-                                          </div>
-
-                    <div class="col-9 pl-0">
-                      <h5>The Australian Climate Roundtable.</h5>
-<p>A broad alliance of major Australian business, environmental, farmer, investor, union and social welfare groups, including IGCC, the Business Council of Australia, the ACTU, the ACF and others.</p>
-<p>We build common ground in the climate policy debate and encourage a just, effective and efficient response.</p>
-                    </div>
-
-                  </div>
-                </div>
-                              <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                                                          <img class="rounded-circle" src="./What we do - Investor Group on Climate Change_files/ASFIID_Primary-1.webp" alt="">
-                                          </div>
-
-                    <div class="col-9 pl-0">
-                      <h5>The Australian Sustainable Finance Institute</h5>
-<p>We liaise with ASFI, who are leading important work to develop a Sustainable Finance Taxonomy for Australia, integration of TNFD and Natural Capital, and more.</p>
-                    </div>
-
-                  </div>
-                </div>
-                              <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                                                          <img class="rounded-circle" src="./What we do - Investor Group on Climate Change_files/noun-new-zealand-721241-405426.webp" alt="">
-                                          </div>
-
-                    <div class="col-9 pl-0">
-                      <h5>Aotearoa New Zealand Investor Coalition for Net Zero</h5>
-<p>We liaise and collaborate with local coalition partners, <a href="/">Mindful Money</a> and <a href="/">Toitu Tahua: New Zealand Centre for Sustainable Finance</a>, in particular on our annual ‘State of Net Zero Investment’ report, which provides the most accurate and comprehensive snapshot of New Zealand climate finance practice.</p>
-                    </div>
-
-                  </div>
-                </div>
-                          </div>
-          
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
-   
+  
                                 
 @include('userpages.section10')
             

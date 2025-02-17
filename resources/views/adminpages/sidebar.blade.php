@@ -29,8 +29,15 @@
           <li><a href="/admin/add-Working_Group_Participation"><i style="color:purple" class="fa fa-user-plus"></i><span>Group Member</span></a></li>
           <li><a href="/admin/add-members"><i style="color:blue" class="fa fa-user"></i><span>Add Member</span></a></li>
           <li><a href="/admin/add-team"><i style="color:gold" class="fa fa-users"></i><span>Add Team</span></a></li>
-          <li><a href="/admin/add-news"><i style="color:gold" class="fa fa-users"></i><span>Add News</span></a></li>
+          <li><a href="/admin/add-news"><i style="color:aquamarine" class="fa fa-rss"></i><span>Add News</span></a></li>
 
+          <li>
+            <a href="#eleme" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i style="color:coral" class="fa fa-info-circle"></i><span>About</span></a>
+            <ul class="collapse list-unstyled" id="eleme">
+               <li><a href="/admin/add-about"> <span>Add About</span></a></li>
+               <li><a href="/admin/add-initiative"> <span>Add Initiative</span></a></li>
+            </ul>
+         </li>
 
 
           <li>
@@ -38,9 +45,9 @@
             <ul class="collapse list-unstyled" id="elemen">
                <li><a href="/admin/add-workstream"> <span>Workstreams</span></a></li>
                <li><a href="/admin/add-network"> <span>Leveraging Our Networks</span></a></li>
+               <li><a href="/admin/add-section-1"> <span>Section 1</span></a></li>
             </ul>
          </li>
-
 
           <li>
              <a href="#element" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-cog yellow_color"></i><span>Settings</span></a>

@@ -144,41 +144,23 @@ var SF_LDATA = {"ajax_url":"https:\/\/igcc.org.au\/wp-admin\/admin-ajax.php","ho
                                       <div class="col-12 col-md-8"></div>
                                       <div class="col-12">
                                           <div class="row">
+
+                                            @if ($teams->isNotEmpty())
+                                            @foreach($teams as $team)
                                               <div class="col-6 col-md-4 pr-lg-8 people pb-5">
                                                   <a href="/">
-                                                      <img class="pb-4 img-rounded-square" src="{{ asset('Our management - Investor Group on Climate Change_files/image-7-e1685534039717-380x320.jpeg') }}" alt="Rebecca Mikula Wright">
+                                                      <img class="pb-4 img-rounded-square" src="{{ asset('images/' . $team->image) }}" alt="Rebecca Mikula Wright">
                                                   </a>
                                                   <h4 class="people-display-name">
-                                                      <a class="text-secondary" href="/">Rebecca Mikula-Wright, Chief Executive Officer</a>
+                                                      <a class="text-secondary" href="/">{{$team->heading}}</a>
                                                   </h4>
                                                   <div class="people-org">
-                                                      Investor Group on Climate Change &amp; Asia Investor Group on Climate Change
+                                                    {{$team->paragraph}}
                                                   </div>
                                               </div>
-  
-                                              <div class="col-6 col-md-4 pr-lg-8 people pb-5">
-                                                  <a href="/">
-                                                      <img class="pb-4 img-rounded-square" src="{{ asset('Our management - Investor Group on Climate Change_files/image-2-e1685532145812-380x320.jpeg') }}" alt="A picture of Dani Siew">
-                                                  </a>
-                                                  <h4 class="people-display-name">
-                                                      <a class="text-secondary" href="/">Dani Siew, Senior Manager, Corporate Engagement</a>
-                                                  </h4>
-                                                  <div class="people-org">
-                                                      Investor Group on Climate Change &amp; Asia Investor Group on Climate Change
-                                                  </div>
-                                              </div>
-  
-                                              <div class="col-6 col-md-4 pr-lg-8 people pb-5">
-                                                  <a href="/">
-                                                      <img class="pb-4 img-rounded-square" src="{{ asset('Our management - Investor Group on Climate Change_files/Beth_richards-380x320.jpg') }}" alt="">
-                                                  </a>
-                                                  <h4 class="people-display-name">
-                                                      <a class="text-secondary" href="/">Bethany Richards, Manager, Policy</a>
-                                                  </h4>
-                                                  <div class="people-org">
-                                                      Investor Group on Climate Change &amp; Asia Investor Group on Climate Change
-                                                  </div>
-                                              </div>
+                                              @endforeach
+                                              @endif
+                                             
                                           </div>
                                       </div>
                                   </div>
