@@ -4,6 +4,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\BannerController;
 use App\Http\Controllers\HighlightController;
 use App\Http\Controllers\InitiativeController;
+use App\Http\Controllers\JoinController;
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\MembersController;
 use App\Http\Controllers\MessageController;
@@ -95,6 +96,8 @@ Route::group(['middleware' => ['admin.auth'], 'prefix' => 'admin'], function() {
     Route::get("add-section-1", [Section1Controller::class, "section1"]);
     Route::get("add-section-2", [Section2Controller::class, "section2"]);
     Route::get("add-resource", [ResourceController::class, "resource"]);
+    Route::get("add-join", [JoinController::class, "join"]);
+
 });
  
 Route::get('/download-prospectus', function () {
@@ -243,3 +246,11 @@ Route::get('/resource/{id}', [ResourceController::class, 'show'])->name('resourc
 Route::post('/resource/{id}', [ResourceController::class, 'update'])->name('resource.update');
 //to delet resource
 Route::post('/delete-resource', [ResourceController::class, 'deleteresource'])->name('delete.resource');
+//to add join data
+Route::post('/join/store', [JoinController::class, 'store'])->name('join.store');
+//to get join data
+Route::get('/join/{id}', [JoinController::class, 'show'])->name('join.show');
+// Update join data
+Route::post('/join/{id}', [JoinController::class, 'update'])->name('join.update');
+//to delet join
+Route::post('/delete-join', [JoinController::class, 'deletejoin'])->name('delete.join');

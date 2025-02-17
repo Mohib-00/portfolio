@@ -110,10 +110,8 @@
       </div>
     
     <div class="page-header-title">
-                                  <h1 class="">Join us</h1>
-          
-      
-                      </div>
+        <h1 class="">Join us</h1>
+    </div>
   </div>
 
 
@@ -136,8 +134,7 @@
     <div class="row mr-lg-0 align-items-stretch">
       <div class="col-12 ">
         <h2><a href="/membership">IGCC Membership</a></h2>
-<p class="lead smaller-width">Membership provides an opportunity to strengthen climate change-related investment management and to demonstrate your organisation is proactively engaged in addressing climate change.</p>
-<p class="lead smaller-width">IGCC membership is available to investors operating in Australia and New Zealand including superannuation funds, insurance companies, fund managers and other financial services providers, such as asset consultants, brokers and investment industry associations.</p>
+<p class="lead smaller-width">{{$joins->heading}}</p>
 <p><a class="btn btn-link" href="/membership">Read more</a></p>
       </div>
 
@@ -151,8 +148,7 @@
     <div class="row mr-lg-0 align-items-stretch">
       <div class="col-12 ">
         <h2><a href="/support_our_work">Support our Work</a></h2>
-<p class="lead smaller-width">The movement of capital and the investors’ perspectives have immense power to support climate action, from funding clean energy, to influencing companies, to informing policy development.</p>
-<p class="lead smaller-width">As a not-for-profit organisation, an important part of our funding comes from partnerships and supporters who recognise IGCC’s track record and potential are keen to support more systemic climate action.</p>
+<p class="lead smaller-width">{{$joins->paragraph}}</p>
 <p><a class="btn btn-link" href="/support_our_work">Read more</a></p>
       </div>
 
@@ -166,8 +162,7 @@
     <div class="row mr-lg-0 align-items-stretch">
       <div class="col-12 ">
         <h2><a href="/join_our_team">Join our Team</a></h2>
-<p class="smaller-width lead">We are always on the lookout for talented people to join our team. Working at IGCC you will be at the forefront of discussions and collaborations that shape the future of sustainable investing.</p>
-<p class="smaller-width lead">At IGCC, we value a flexible and supportive work environment that promotes autonomy and work-life integration. We recognise and appreciate the unique strengths and perspectives each individual brings, empowering you to make a difference in our collective pursuit of a sustainable world.</p>
+<p class="smaller-width lead">{{$joins->name}}</p>
 <p><a class="btn btn-link" href="/join_our_team">Read more</a></p>
       </div>
 

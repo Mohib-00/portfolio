@@ -223,8 +223,9 @@ public function logout() {
 
     public function memberships(){ 
         $user = Auth::user();   
-        $teams = Team::all();      
-        return view('userpages.membership',compact('user','teams'));
+        $teams = Team::all(); 
+        $members = AddMember::all();     
+        return view('userpages.membership',compact('user','teams','members'));
     }
     public function supportourwork(){ 
         $user = Auth::user();         

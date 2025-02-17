@@ -132,21 +132,16 @@
 
                                             
 <div class="standard-content content-section container-fluid bottom-padding-none">
-
   <div class="content-section-inner default-padding pr-md-4 pr-lg-0  default">
     <div class="row mr-lg-0 align-items-stretch">
-      <div class="col-12 col-lg-8 pr-lg-5">
-        <p class="lead">IGCC membership is available to investors operating in Australia and New Zealand including superannuation funds, insurance companies, fund managers and other financial services providers, such as asset consultants, brokers and investment industry associations.</p>
-<p>Membership provides an opportunity to strengthen climate change-related investment management and to be recognised as an organisation proactively engaged in addressing climate change.</p>
-      </div>
-
-              <!-- image displays at 992+ -->
+        <div class="col-12 col-lg-8 pr-lg-5">
+          <p class="lead">IGCC membership is available to investors operating in Australia and New Zealand including superannuation funds, insurance companies, fund managers and other financial services providers, such as asset consultants, brokers and investment industry associations.</p>
+        </div>
         <div class="d-none d-lg-block col-auto col-lg ml-lg-1 pr-lg-0 text-right">
           <img class="left-rounded" src="./Membership - Investor Group on Climate Change_files/AdobeStock_358940199_flipped_med.jpg" alt="">
         </div>
-        <!-- end of image -->
-          </div>
-  </div>
+      </div>
+   </div>
 </div>
                                 
 <div class="twocol-icons content-section container-fluid align-right top-padding-none bottom-padding-none">
@@ -155,297 +150,26 @@
       <div class="row align-items-center">
 
         <div class="col-12">
-          
-                      <div class="row">
-                              <div class="col-12 col-md-6">
-
+          <div class="row">
+            <div class="col-12 col-md-6">
                   <div class="row">
-
                     <div class="col-3">
-
-                                                                                          <img class="rounded-circle" src="./Membership - Investor Group on Climate Change_files/Policy-icon.webp" alt="">
-                                          </div>
-
+                      <img class="rounded-circle" src="./Membership - Investor Group on Climate Change_files/Policy-icon.webp" alt="">
+                    </div>
                     <div class="col-9 pl-0">
                       <h5>Use your investor voice</h5>
-<p>to drive climate policy in Australia and New Zealand</p>
+                      <p>to drive climate policy in Australia and New Zealand</p>
                     </div>
-
                   </div>
                 </div>
-                              <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                                                          <img class="rounded-circle" src="./Membership - Investor Group on Climate Change_files/Emissions-icon.webp" alt="">
-                                          </div>
-
-                    <div class="col-9 pl-0">
-                      <h5>Influence high-emitting companies</h5>
-<p>to reduce their emissions</p>
-                    </div>
-
-                  </div>
-                </div>
-                              <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                                                          <img class="rounded-circle" src="./Membership - Investor Group on Climate Change_files/Climate-change-icon.webp" alt="">
-                                          </div>
-
-                    <div class="col-9 pl-0">
-                      <h5>Increase your knowledge of the impacts of climate change</h5>
-<p>with resources on best practices and help shape research developments relevant to the investment sector</p>
-                    </div>
-
-                  </div>
-                </div>
-                              <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                                                          <img class="rounded-circle" src="./Membership - Investor Group on Climate Change_files/Collaborate-icon.webp" alt="">
-                                          </div>
-
-                    <div class="col-9 pl-0">
-                      <h5>Join the NZAM &amp; PAOO initiatives</h5>
-<p>and gain unique insights into international investment collaboration</p>
-                    </div>
-
-                  </div>
-                </div>
-                              <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                                                          <img class="rounded-circle" src="./Membership - Investor Group on Climate Change_files/Knowledge-icon.webp" alt="">
-                                          </div>
-
-                    <div class="col-9 pl-0">
-                      <h5>Gain unique access</h5>
-<p>to peer to peer learning and networking opportunities</p>
-                    </div>
-
-                  </div>
-                </div>
-                              <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                                                          <img class="rounded-circle" src="./Membership - Investor Group on Climate Change_files/members.svg" alt="">
-                                          </div>
-
-                    <div class="col-9 pl-0">
-                      <h5>Demonstrate your organisation’s commitment</h5>
-<p>to net zero by 2050 and responsible investing</p>
-                    </div>
-
-                  </div>
-                </div>
-                              <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                                                      </div>
-
-                    <div class="col-9 pl-0">
-                                          </div>
-
-                  </div>
-                </div>
-                              <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                                                      </div>
-
-                    <div class="col-9 pl-0">
-                                          </div>
-
-                  </div>
-                </div>
-                              <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                                                      </div>
-
-                    <div class="col-9 pl-0">
-                                          </div>
-
-                  </div>
-                </div>
-                          </div>
-          
-        </div>
+              </div>
+          </div>
 
       </div>
     </div>
   </div>
 </div>
-                                
-
-<div class="page-supporter content-section container-fluid bottom-padding-none">
-  <div class="content-section-inner default-padding default">
-    <div class="row">
-      <div class="col-12 col-md-8">
-        <h2 class="text-moss">Our members include</h2>
-              </div>
-      <div class="col-12  px-lg-2">
-                  <div class="slider 4colslider slick-initialized slick-slider slick-dotted">
-
-                          <div class="slick-list draggable"><div class="slick-track card-deck" style="opacity: 1; width: 53130px; transform: translate3d(-3289px, 0px, 0px);"><div class="px-2 slick-slide slick-cloned" data-slick-index="-4" id="" aria-hidden="true" style="width: 253px;" tabindex="-1">
-
-                <div class="card">
-    <div class="card-body bg-white">
-        <a href="https://www.troweprice.com/en/au" tabindex="-1">        <div class="logo"><img src="./Membership - Investor Group on Climate Change_files/T-Rowe-Price_logo-238x244.webp" alt=""></div>        </a>    </div>
-</div>
-              </div><div class="px-2 slick-slide slick-cloned" data-slick-index="-3" id="" aria-hidden="true" style="width: 253px;" tabindex="-1">
-
-               
-                
-                
-               
-               
-                <div class="card">
-    <div class="card-body bg-white">
-        <a href="https://rbcouncil.org/" tabindex="-1">        <div class="logo"><img src="./Membership - Investor Group on Climate Change_files/Resilient-Building-Council-452-x-463-238x244.jpg" alt=""></div>        </a>    </div>
-</div>
-              </div><div class="px-2 slick-slide" data-slick-index="65" aria-hidden="true" style="width: 253px;" tabindex="-1" role="tabpanel" id="slick-slide065" aria-describedby="slick-slide-control065">
-
-                <div class="card">
-    <div class="card-body bg-white">
-        <a href="https://www.bt.com.au/" tabindex="-1">        <div class="logo"><img src="./Membership - Investor Group on Climate Change_files/bt-financial-group-238x232.webp" alt=""></div>        </a>    </div>
-</div>
-              </div><div class="px-2 slick-slide" data-slick-index="66" aria-hidden="true" style="width: 253px;" tabindex="-1" role="tabpanel" id="slick-slide066" aria-describedby="slick-slide-control066">
-
-                <div class="card">
-    <div class="card-body bg-white">
-        <a href="https://api.org.au/" tabindex="-1">        <div class="logo"><img src="./Membership - Investor Group on Climate Change_files/Aus-Property-Institute-238x244.jpg" alt=""></div>        </a>    </div>
-</div>
-              </div><div class="px-2 slick-slide" data-slick-index="67" aria-hidden="true" style="width: 253px;" tabindex="-1" role="tabpanel" id="slick-slide067" aria-describedby="slick-slide-control067">
-
-                <div class="card">
-    <div class="card-body bg-white">
-        <a href="https://platypusassetmanagement.com.au/" tabindex="-1">        <div class="logo"><img src="./Membership - Investor Group on Climate Change_files/platypusColor-238x232.webp" alt=""></div>        </a>    </div>
-</div>
-              </div><div class="px-2 slick-slide" data-slick-index="68" aria-hidden="true" style="width: 253px;" tabindex="-1" role="tabpanel" id="slick-slide068" aria-describedby="slick-slide-control068">
-
-                <div class="card">
-    <div class="card-body bg-white">
-        <a href="https://energetics.com.au/" tabindex="-1">        <div class="logo"><img src="./Membership - Investor Group on Climate Change_files/ERM-Energetics-238x244.webp" alt=""></div>        </a>    </div>
-</div>
-              </div><div class="px-2 slick-slide" data-slick-index="69" aria-hidden="true" style="width: 253px;" tabindex="-1" role="tabpanel" id="slick-slide069" aria-describedby="slick-slide-control069">
-
-                <div class="card">
-    <div class="card-body bg-white">
-        <a href="https://www.owladvisory.com/" tabindex="-1">        <div class="logo"><img src="./Membership - Investor Group on Climate Change_files/Owl-Advisory-by-KWM-logo-238x244.jpeg" alt=""></div>        </a>    </div>
-</div>
-              </div><div class="px-2 slick-slide" data-slick-index="70" aria-hidden="true" style="width: 253px;" tabindex="-1" role="tabpanel" id="slick-slide070" aria-describedby="slick-slide-control070">
-
-                <div class="card">
-    <div class="card-body bg-white">
-        <a href="https://apostlefm.com.au/" tabindex="-1">        <div class="logo"><img src="./Membership - Investor Group on Climate Change_files/Apostle-new-logo-238x244.webp" alt=""></div>        </a>    </div>
-</div>
-              </div><div class="px-2 slick-slide" data-slick-index="71" aria-hidden="true" style="width: 253px;" tabindex="-1" role="tabpanel" id="slick-slide071" aria-describedby="slick-slide-control071">
-
-                <div class="card">
-    <div class="card-body bg-white">
-        <a href="https://adamantem.com.au/" tabindex="-1">        <div class="logo"><img src="./Membership - Investor Group on Climate Change_files/Adamantem-Logo_black-copy-238x244.jpg" alt=""></div>        </a>    </div>
-</div>
-              </div><div class="px-2 slick-slide" data-slick-index="72" aria-hidden="true" style="width: 253px;" tabindex="-1" role="tabpanel" id="slick-slide072" aria-describedby="slick-slide-control072">
-
-                <div class="card">
-    <div class="card-body bg-white">
-        <a href="https://newforests.com.au/" tabindex="-1">        <div class="logo"><img src="./Membership - Investor Group on Climate Change_files/NewForests_Logo_2022_website-238x244.jpg" alt=""></div>        </a>    </div>
-</div>
-              </div><div class="px-2 slick-slide" data-slick-index="73" aria-hidden="true" style="width: 253px;" tabindex="-1" role="tabpanel" id="slick-slide073" aria-describedby="slick-slide-control073">
-
-                <div class="card">
-    <div class="card-body bg-white">
-        <a href="https://maxcapgroup.com.au/" tabindex="-1">        <div class="logo"><img src="./Membership - Investor Group on Climate Change_files/MaxCap-Group_Logo-002-238x244.jpg" alt=""></div>        </a>    </div>
-</div>
-              </div><div class="px-2 slick-slide" data-slick-index="74" aria-hidden="true" style="width: 253px;" tabindex="-1" role="tabpanel" id="slick-slide074" aria-describedby="slick-slide-control074">
-
-                <div class="card">
-    <div class="card-body bg-white">
-        <a href="https://woodbridgecapital.com.au/" tabindex="-1">        <div class="logo"><img src="./Membership - Investor Group on Climate Change_files/woodbridge-238x244.jpg" alt=""></div>        </a>    </div>
-</div>
-              </div><div class="px-2 slick-slide" data-slick-index="75" aria-hidden="true" style="width: 253px;" tabindex="-1" role="tabpanel" id="slick-slide075" aria-describedby="slick-slide-control075">
-
-                <div class="card">
-    <div class="card-body bg-white">
-        <a href="https://australianretirementtrust.com.au/" tabindex="-1">        <div class="logo"><img src="./Membership - Investor Group on Climate Change_files/Australian-Retirement-Trust-238x232.webp" alt=""></div>        </a>    </div>
-</div>
-              </div><div class="px-2 slick-slide" data-slick-index="76" aria-hidden="true" style="width: 253px;" tabindex="-1" role="tabpanel" id="slick-slide076" aria-describedby="slick-slide-control076">
- 
-                
-               
-                
-               
-                <div class="card">
-    <div class="card-body bg-white">
-        <a href="https://metrics.com.au/" tabindex="-1">        <div class="logo"><img src="./Membership - Investor Group on Climate Change_files/Metrics-logo-copy-238x244.jpg" alt=""></div>        </a>    </div>
-</div>
-              </div><div class="px-2 slick-slide slick-cloned" data-slick-index="103" id="" aria-hidden="true" style="width: 253px;" tabindex="-1">
-
-                <div class="card">
-    <div class="card-body bg-white">
-        <a href="https://qbe.com/" tabindex="-1">        <div class="logo"><img src="./Membership - Investor Group on Climate Change_files/QBE_logo-238x244.jpg" alt=""></div>        </a>    </div>
-</div>
-              </div><div class="px-2 slick-slide slick-cloned" data-slick-index="104" id="" aria-hidden="true" style="width: 253px;" tabindex="-1">
-
-                
-                <div class="card">
-    <div class="card-body bg-white">
-        <a href="https://booster.co.nz/" tabindex="-1">        <div class="logo"><img src="./Membership - Investor Group on Climate Change_files/Booster_logo-238x244.webp" alt=""></div>        </a>    </div>
-</div>
-              </div><div class="px-2 slick-slide slick-cloned" data-slick-index="107" id="" aria-hidden="true" style="width: 253px;" tabindex="-1">
-
-                <div class="card">
-    <div class="card-body bg-white">
-        <a href="https://equipsuper.com.au/" tabindex="-1">        <div class="logo"><img src="./Membership - Investor Group on Climate Change_files/EquipSuper_logo-238x244.jpg" alt=""></div>        </a>    </div>
-</div>
-              </div><div class="px-2 slick-slide slick-cloned" data-slick-index="108" id="" aria-hidden="true" style="width: 253px;" tabindex="-1">
-
-               
- 
-                
-              </div></div></div>
-                   
-                          
-                          
-                      </div>
-
-          <div class="row">
-             <div class="col-md-8 ml-lg-4 mt-4 mt-md-0">
-              <p><a class="btn btn-secondary" href="/members">See all members</a></p>
-
-            </div>
-          </div>
-
-                        </div>
-    </div>
-
-  </div>
-</div>                                
+   @include('userpages.section7')                                
 <div class="flexible-columns content-section container-fluid align-right">
   <div class="content-section-inner default-padding default">
     <div class="col-12 pl-0 pr-0">

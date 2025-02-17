@@ -31,7 +31,7 @@
           <li><a href="/admin/add-team"><i style="color:gold" class="fa fa-users"></i><span>Add Team</span></a></li>
           <li><a href="/admin/add-news"><i style="color:aquamarine" class="fa fa-rss"></i><span>Add News</span></a></li>
           <li><a href="/admin/add-resource"><i style="color:chartreuse" class="fa fa-database"></i><span>Add Resource</span></a></li>
-
+          <li><a href="/admin/add-join"><i style="color:chartreuse" class="fa fa-database"></i><span>Add Join</span></a></li>
 
           <li>
             <a href="#eleme" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i style="color:coral" class="fa fa-info-circle"></i><span>About</span></a>

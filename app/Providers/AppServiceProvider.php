@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Models\Banner;
+use App\Models\Join;
 use App\Models\Setting;
 use Illuminate\Support\ServiceProvider;
 use App\Models\Message;
@@ -33,11 +34,18 @@ class AppServiceProvider extends ServiceProvider
             'paragraph' => '',
             'image' => '',
         ]);
+
+        $joins = Join::first() ?? new Join([
+            'heading' => '',
+            'paragraph' => '',
+            'name' => '',
+        ]);
     
         view()->share([
             'count' => $count,
             'settings' => $settings,
             'banners' => $banners,
+            'joins' => $joins,
         ]);
     }
 }
