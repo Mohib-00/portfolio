@@ -34,6 +34,15 @@
           <li><a href="/admin/add-join"><i style="color:darkred" class="fa fa-book"></i><span>Add Join</span></a></li>
 
           <li>
+            <a href="#ele" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i style="color:teal" class="fa fa-key"></i><span>Support Our Work</span></a>
+            <ul class="collapse list-unstyled" id="ele">
+               <li><a href="/admin/add-support-section1"><span>Add Section 1</span></a></li>
+               <li><a href="/admin/add-support-section2"> <span>Add Section 2</span></a></li>
+               <li><a href="/admin/add-support-section3"> <span>Add Section 3</span></a></li>
+            </ul>
+         </li>
+
+          <li>
             <a href="#elem" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i style="color:teal" class="fa fa-key"></i><span>Membership</span></a>
             <ul class="collapse list-unstyled" id="elem">
                <li><a href="/admin/add"><span>Add Section 1</span></a></li>

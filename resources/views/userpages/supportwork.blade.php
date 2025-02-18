@@ -112,10 +112,8 @@
       </div>
     
     <div class="page-header-title">
-                                  <h1 class="">Support our work</h1>
-          
-      
-                      </div>
+      <h1 class="">Support our work</h1>
+    </div>
   </div>
 
 
@@ -136,18 +134,20 @@
 
   <div class="content-section-inner default-padding pr-md-4 pr-lg-0  default">
     <div class="row mr-lg-0 align-items-stretch">
-      <div class="col-12 col-lg-8 pr-lg-5">
-        <p class="lead">At IGCC we recognise the need for urgent action to combat climate change and create a sustainable future for generations to come.</p>
-<p class="lead">We are dedicated to making a positive impact. Partner with us to contribute to our ambitious efforts.</p>
+      @if ($support1s->isNotEmpty())
+      @foreach($support1s as $support1)
+      <div class="col-12 col-lg-8 pr-lg-5 mt-2">
+        <p class="lead">{{$support1->paragraph}}</p>
       </div>
+      <div class="d-none d-lg-block col-auto col-lg ml-lg-1 pr-lg-0 text-right mt-2">
+        <img class="left-rounded" src="{{ asset('images/' . $support1->image) }}" alt="">
+      </div>
+      @endforeach
+      @endif
 
-              <!-- image displays at 992+ -->
-        <div class="d-none d-lg-block col-auto col-lg ml-lg-1 pr-lg-0 text-right">
-          <img class="left-rounded" src="./Support our work - Investor Group on Climate Change_files/jade-stephens-kzIn_oWgFmc-unsplash-scaled-e1689147660202.jpg" alt="">
-        </div>
-        <!-- end of image -->
-          </div>
+     </div>
   </div>
+
 </div>
                                 
 <div class="twocol-icons content-section container-fluid top-padding-none">
@@ -157,78 +157,24 @@
 
         <div class="col-12">
           <h2>Why Support IGCC?</h2>
-
-                      <div class="row">
-                              <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                                                          <img class="rounded-circle" src="./Support our work - Investor Group on Climate Change_files/noun-SystemicImpact.png" alt="">
-                                          </div>
-
-                    <div class="col-9 pl-0">
-                      <h5>Systemic Impact</h5>
-<p>We develop and implement innovative and systemic solutions to address the challenges posed by climate change.</p>
-<p>Your support funds critical projects and initiatives that will make a real difference in reducing carbon emissions, switching to clean energy, and fostering climate resilience.</p>
-                    </div>
-
-                  </div>
+          <div class="row">
+            @if ($support2s->isNotEmpty())
+            @foreach($support2s as $support2)
+            <div class="col-12 col-md-6">
+              <div class="row">
+                <div class="col-3">
+                  <img class="rounded-circle" src="{{ asset('images/' . $support2->image) }}" alt="">
                 </div>
-                              <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                                                          <img class="rounded-circle" src="./Support our work - Investor Group on Climate Change_files/noun-network-2341691-40531B.png" alt="">
-                                          </div>
-
-                    <div class="col-9 pl-0">
-                      <h5>Expertise and Partnerships</h5>
-<p>We have a dedicated team of experts who are passionate and have deep knowledge and experience across climate, investment, business and policy development.</p>
-<p>Through our team’s extensive networks, our global funding partners and partnerships, we ensure that your contributions are utilized effectively and efficiently.</p>
-                    </div>
-
-                  </div>
+                <div class="col-9 pl-0">
+                  <h5>{{$support2->heading}}</h5>
+                  <p class="lead">{{$support2->paragraph}}</p>
                 </div>
-                              <div class="col-12 col-md-6">
+              </div>
+            </div>
+            @endforeach
+            @endif
 
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                                                          <img class="rounded-circle" src="./Support our work - Investor Group on Climate Change_files/noun-accountability.png" alt="">
-                                          </div>
-
-                    <div class="col-9 pl-0">
-                      <h5>Transparency and Accountability</h5>
-<p>We understand the importance of achieving our ambitious impact targets. We provide regular updates and report on the progress and outcomes of our projects.</p>
-<p>Our commitment to accountability provides confidence that your support will have a direct and measurable impact on combating climate change.</p>
-                    </div>
-
-                  </div>
-                </div>
-                              <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                                                          <img class="rounded-circle" src="./Support our work - Investor Group on Climate Change_files/noun-together.webp" alt="">
-                                          </div>
-
-                    <div class="col-9 pl-0">
-                      <h5>Amplified Impact</h5>
-<p>By supporting our development work you become part of a larger movement to address climate change.</p>
-<p>Together, we can amplify our efforts and send a powerful message to policymakers, industry, and communities globally. Your funding support serves as a catalyst for change and inspires others to join in climate action.</p>
-                    </div>
-
-                  </div>
-                </div>
-                          </div>
-          
+          </div>
         </div>
 
       </div>
@@ -243,61 +189,23 @@
 
         <div class="col-12">
           <h2>How You Can Contribute</h2>
-
-                      <div class="row">
-                              <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                                                          <img class="rounded-circle" src="./Support our work - Investor Group on Climate Change_files/noun-core.png" alt="">
-                                          </div>
-
-                    <div class="col-9 pl-0">
-                      <h5>Core Funding</h5>
-<p>Your financial contribution can have a significant impact on our ability to implement impactful climate change solutions.</p>
-<p>Every dollar counts and brings us closer to a more sustainable future.</p>
-                    </div>
-
-                  </div>
+          <div class="row">
+            @if ($support3s->isNotEmpty())
+            @foreach($support3s as $support3)
+            <div class="col-12 col-md-6">
+              <div class="row">
+                <div class="col-3">
+                  <img class="rounded-circle" src="{{ asset('images/' . $support3->image) }}" alt="">
                 </div>
-                              <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                                                          <img class="rounded-circle" src="./Support our work - Investor Group on Climate Change_files/Noun_Project.png" alt="">
-                                          </div>
-
-                    <div class="col-9 pl-0">
-                      <h5>Partnerships and Sponsorship</h5>
-<p>Please contact us to explore collaboration through sponsorship and partnerships.</p>
-<p>By aligning your brand with specific climate change initiatives, you demonstrate your commitment to sustainability and contribute to a better future.</p>
-                    </div>
-
-                  </div>
+                <div class="col-9 pl-0">
+                  <h5>{{$support3->heading}}</h5>
+                  <p class="lead">{{$support3->paragraph}}</p>
                 </div>
-                              <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                                                          <img class="rounded-circle" src="./Support our work - Investor Group on Climate Change_files/noun-amplify.webp" alt="">
-                                          </div>
-
-                    <div class="col-9 pl-0">
-                      <h5>Spread The Word</h5>
-<p>Help us reach a wider audience by sharing our campaigns through social media, email, and word of mouth.</p>
-<p>Encourage the investor community to support our cause and take meaningful climate action.</p>
-                    </div>
-
-                  </div>
-                </div>
-                          </div>
-          
+              </div>
+            </div>
+            @endforeach
+            @endif
+            </div>
         </div>
 
       </div>

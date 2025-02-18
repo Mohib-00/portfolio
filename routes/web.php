@@ -20,6 +20,9 @@ use App\Http\Controllers\ResourceController;
 use App\Http\Controllers\Section1Controller;
 use App\Http\Controllers\Section2Controller;
 use App\Http\Controllers\SettingsController;
+use App\Http\Controllers\Support1Controller;
+use App\Http\Controllers\Support2Controller;
+use App\Http\Controllers\Support3Controller;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\UserAuthcontroller;
 use App\Http\Controllers\WorkstreamController;
@@ -103,7 +106,9 @@ Route::group(['middleware' => ['admin.auth'], 'prefix' => 'admin'], function() {
     Route::get("add", [MemberShipsController::class, "membership"]);
     Route::get("add-membership-section2", [MebershipSection2Controller::class, "membershipsection2"]);
     Route::get("add-membership-category", [CategoryController::class, "category"]);
-
+    Route::get("add-support-section1", [Support1Controller::class, "support1"]);
+    Route::get("add-support-section2", [Support2Controller::class, "support2"]);
+    Route::get("add-support-section3", [Support3Controller::class, "support3"]);
 });
  
 Route::get('/download-prospectus', function () {
@@ -284,3 +289,27 @@ Route::get('/category/{id}', [CategoryController::class, 'show'])->name('categor
 Route::post('/category/{id}', [CategoryController::class, 'update'])->name('category.update');
 //to delet category
 Route::post('/delete-category', [CategoryController::class, 'deletecategory'])->name('delete.category');
+//to add support1 data
+Route::post('/support1/store', [Support1Controller::class, 'store'])->name('support1.store');
+//to get support1 data
+Route::get('/support1/{id}', [Support1Controller::class, 'show'])->name('support1.show');
+// Update support1 data
+Route::post('/support1/{id}', [Support1Controller::class, 'update'])->name('support1.update');
+//to delet support1
+Route::post('/delete-support1', [Support1Controller::class, 'deletesupport1'])->name('delete.support1');
+//to add support2 data
+Route::post('/support2/store', [Support2Controller::class, 'store'])->name('support2.store');
+//to get support2 data
+Route::get('/support2/{id}', [Support2Controller::class, 'show'])->name('support2.show');
+// Update support2 data
+Route::post('/support2/{id}', [Support2Controller::class, 'update'])->name('support2.update');
+//to delet support2
+Route::post('/delete-support2', [Support2Controller::class, 'deletesupport2'])->name('delete.support2');
+//to add support3 data
+Route::post('/support3/store', [Support3Controller::class, 'store'])->name('support3.store');
+//to get support3 data
+Route::get('/support3/{id}', [Support3Controller::class, 'show'])->name('support3.show');
+// Update support3 data
+Route::post('/support3/{id}', [Support3Controller::class, 'update'])->name('support3.update');
+//to delet support3
+Route::post('/delete-support3', [Support3Controller::class, 'deletesupport3'])->name('delete.support3');

@@ -15,6 +15,9 @@ use App\Models\Overview;
 use App\Models\Resource;
 use App\Models\Section1;
 use App\Models\Section2;
+use App\Models\Support1;
+use App\Models\Support2;
+use App\Models\Support3;
 use App\Models\Team;
 use App\Models\workstream;
 use Illuminate\Http\Request;
@@ -232,8 +235,11 @@ public function logout() {
         return view('userpages.membership',compact('user','teams','members','membershipsection2s','categorys'));
     }
     public function supportourwork(){ 
-        $user = Auth::user();         
-        return view('userpages.supportwork',compact('user'));
+        $user = Auth::user(); 
+        $support1s = Support1::all();  
+        $support2s = Support2::all(); 
+        $support3s = Support3::all();       
+        return view('userpages.supportwork',compact('user','support1s','support2s','support3s'));
     }
     public function joinourteam(){ 
         $user = Auth::user();         
