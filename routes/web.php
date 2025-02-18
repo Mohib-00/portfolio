@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\BannerController;
+use App\Http\Controllers\CareerController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HighlightController;
 use App\Http\Controllers\InitiativeController;
@@ -109,6 +110,7 @@ Route::group(['middleware' => ['admin.auth'], 'prefix' => 'admin'], function() {
     Route::get("add-support-section1", [Support1Controller::class, "support1"]);
     Route::get("add-support-section2", [Support2Controller::class, "support2"]);
     Route::get("add-support-section3", [Support3Controller::class, "support3"]);
+    Route::get("add-career-opportunities", [CareerController::class, "career"]);
 });
  
 Route::get('/download-prospectus', function () {
@@ -313,3 +315,11 @@ Route::get('/support3/{id}', [Support3Controller::class, 'show'])->name('support
 Route::post('/support3/{id}', [Support3Controller::class, 'update'])->name('support3.update');
 //to delet support3
 Route::post('/delete-support3', [Support3Controller::class, 'deletesupport3'])->name('delete.support3');
+//to add career data
+Route::post('/career/store', [CareerController::class, 'store'])->name('career.store');
+//to get career data
+Route::get('/career/{id}', [CareerController::class, 'show'])->name('career.show');
+// Update career data
+Route::post('/career/{id}', [CareerController::class, 'update'])->name('career.update');
+//to delet career
+Route::post('/delete-career', [CareerController::class, 'deletecareer'])->name('delete.career');

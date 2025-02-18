@@ -504,7 +504,15 @@ $(document).on('click', '.delmsg', function() {
         }
     });
 });
-
+//for search
+$(document).ready(function() {
+    $(".search-input").on("keyup", function() {
+        var value = $(this).val().toLowerCase(); 
+        $(".user-row").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+        });
+    });
+});
  
 </script>
 </body>

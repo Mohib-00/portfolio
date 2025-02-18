@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\About;
 use App\Models\AddMember;
+use App\Models\Career;
 use App\Models\Category;
 use App\Models\Highlight;
 use App\Models\Initiative;
@@ -242,8 +243,9 @@ public function logout() {
         return view('userpages.supportwork',compact('user','support1s','support2s','support3s'));
     }
     public function joinourteam(){ 
-        $user = Auth::user();         
-        return view('userpages.careers',compact('user'));
+        $user = Auth::user();    
+        $careers = Career::all();     
+        return view('userpages.careers',compact('user','careers'));
     }
 
     public function  users(){ 

@@ -112,11 +112,11 @@
       </div>
     
     <div class="page-header-title">
-                                  <h1 class="">Careers at IGCC</h1>
-          <div class="pt-2"><p><span dir="ltr" role="presentation">Join our mission-driven organisation and make a meaningful impact towards a net zero economy.</span></p>
-</div>
-      
-                      </div>
+      <h1 class="">Careers at Logix 199</h1>
+        <div class="pt-2"><p>
+          <span dir="ltr" role="presentation">Join our mission-driven organisation and make a meaningful impact towards a net zero economy.</span></p>
+        </div>
+      </div>
   </div>
 
 
@@ -129,44 +129,29 @@
 		<main class="site-main" id="main">
 
 			
-				<article class="post-880 page type-page status-publish hentry" id="post-880">
+	<article class="post-880 page type-page status-publish hentry" id="post-880">
     <div class="components mx-auto">
-
-   
-                                
-<div class="featured-stat content-section container-fluid content-end">
-  <div class="content-section-inner default-padding pr-md-4 pr-lg-0 default">
-    <div class="row mr-lg-0 align-items-stretch">
-      <div class="col-12 col-lg-8 pr-lg-5">
-        <div class="limit-width">
-          <h2 style="text-align: left">Do you possess expertise and a passion for climate finance, policy and advocacy, financial services, or member capacity building?</h2>
-<p style="text-align: left">We are always on the lookout for talented people to work with.</p>
-<p style="text-align: left">We’d love to hear from you, even if we aren’t currently advertising a role that fits you.</p>
-<p style="text-align: left">Please send a one-page introductory letter and CV to Sashi at <a>sashi.lata@igcc.org.au</a>.</p>
-        </div>
-
-                          
-                  <div class="mt-4"><p>Working at IGCC you will be at the forefront of discussions and collaborations that shape the future of sustainable investing.</p>
-<p>With over 100 members you will have the opportunity to directly engage, support, and work alongside senior stakeholders from leading organisations to make a difference.</p>
-<p>At IGCC, we value a flexible and supportive work environment that promotes autonomy and work-life integration. We recognise and appreciate the unique strengths and perspectives each individual brings, empowering you to make a difference in our collective pursuit of a sustainable world.</p>
-<p>&nbsp;</p>
-</div>
-        
-      </div>
-      <div class="d-none d-lg-block col-auto col-lg ml-lg-1 pr-lg-0 text-right">
-          <img class="left-rounded" src="./Career opportunities - Investor Group on Climate Change_files/christin-hume-OQ2OjujcP9o-unsplash-scaled.jpg" alt="">
-      </div>
+      <div class="featured-stat content-section container-fluid content-end">
+        <div class="content-section-inner default-padding pr-md-4 pr-lg-0 default">
+          <div class="row mr-lg-0 align-items-stretch">
+            @if ($careers->isNotEmpty())
+            @foreach($careers->take(1) as $career)
+            <div class="col-12 col-lg-8 pr-lg-5">
+              <div class="limit-width">
+                <h2 style="text-align: left">{{$career->heading}}</h2>
+                <p style="text-align: left">{!! nl2br(str_replace('. ', '.<br>', $career->paragraph)) !!}</p>
+              </div>
+            </div>
+            <div class="d-none d-lg-block col-auto col-lg ml-lg-1 pr-lg-0 text-right">
+                <img class="left-rounded" src="{{ asset('images/' . $career->image) }}" alt="">
+            </div>
+            @endforeach
+            @endif
           </div>
-  </div>
-
-</div>
-            
+        </div>
+      </div>
     </div>
-</article>
-
-			
-
-
+  </article>
 
 		</main>
 

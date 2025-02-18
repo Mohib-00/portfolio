@@ -32,9 +32,9 @@
           <li><a href="/admin/add-news"><i style="color:aquamarine" class="fa fa-rss"></i><span>Add News</span></a></li>
           <li><a href="/admin/add-resource"><i style="color:chartreuse" class="fa fa-database"></i><span>Add Resource</span></a></li>
           <li><a href="/admin/add-join"><i style="color:darkred" class="fa fa-book"></i><span>Add Join</span></a></li>
-
+          <li><a href="/admin/add-career-opportunities"><i style="color:darkgoldenrod" class="fa fa-graduation-cap"></i><span>Add Career</span></a></li>
           <li>
-            <a href="#ele" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i style="color:teal" class="fa fa-key"></i><span>Support Our Work</span></a>
+            <a href="#ele" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i style="color:blanchedalmond" class="fa fa-briefcase"></i><span>Support Our Work</span></a>
             <ul class="collapse list-unstyled" id="ele">
                <li><a href="/admin/add-support-section1"><span>Add Section 1</span></a></li>
                <li><a href="/admin/add-support-section2"> <span>Add Section 2</span></a></li>
