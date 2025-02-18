@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use App\Models\Banner;
 use App\Models\Join;
+use App\Models\Memberships;
 use App\Models\Setting;
 use Illuminate\Support\ServiceProvider;
 use App\Models\Message;
@@ -40,12 +41,18 @@ class AppServiceProvider extends ServiceProvider
             'paragraph' => '',
             'name' => '',
         ]);
+
+        $memberships = Memberships::first() ?? new Memberships([
+            'image' => '',
+            'paragraph' => '',
+        ]);
     
         view()->share([
             'count' => $count,
             'settings' => $settings,
             'banners' => $banners,
             'joins' => $joins,
+            'memberships' => $memberships,
         ]);
     }
 }

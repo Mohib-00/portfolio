@@ -215,7 +215,7 @@
                         <div class="col-6">
                             <div class="form-group">
                                 <label for="address">Phone</label>
-                                <input type="number" id="phone" name="phone" class="form-control" />
+                                <input type="text" id="phone" name="phone" class="form-control" />
                             </div>
                         </div>
     
@@ -282,7 +282,7 @@
                         <div class="col-6">
                             <div class="form-group">
                                 <label for="phone1">Phone</label>
-                                <input type="number" id="phone1" name="phone" class="form-control">
+                                <input type="text" id="phone1" name="phone" class="form-control">
                             </div>
                         </div>
                 

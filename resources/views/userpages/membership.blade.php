@@ -106,15 +106,13 @@
 
 
   <div class="page-header bg-primary position-relative text-white content-section container-fluid standard-page standard-padding">
-              <div class="position-absolute page-header-overlay col-10 col-md-8 col-lg-auto px-0">
+      <div class="position-absolute page-header-overlay col-10 col-md-8 col-lg-auto px-0">
         <img src="./Membership - Investor Group on Climate Change_files/InnerPage-Overlay.svg" alt="">
       </div>
     
     <div class="page-header-title">
-                                  <h1 class="">Membership</h1>
-          
-      
-                      </div>
+      <h1 class="">Membership</h1>
+    </div>
   </div>
 
 
@@ -135,10 +133,10 @@
   <div class="content-section-inner default-padding pr-md-4 pr-lg-0  default">
     <div class="row mr-lg-0 align-items-stretch">
         <div class="col-12 col-lg-8 pr-lg-5">
-          <p class="lead">IGCC membership is available to investors operating in Australia and New Zealand including superannuation funds, insurance companies, fund managers and other financial services providers, such as asset consultants, brokers and investment industry associations.</p>
+          <p class="lead">{{$memberships->paragraph}}</p>
         </div>
         <div class="d-none d-lg-block col-auto col-lg ml-lg-1 pr-lg-0 text-right">
-          <img class="left-rounded" src="./Membership - Investor Group on Climate Change_files/AdobeStock_358940199_flipped_med.jpg" alt="">
+          <img class="left-rounded" src="{{ asset('images/' . $memberships->image) }}" alt="">
         </div>
       </div>
    </div>
@@ -151,19 +149,23 @@
 
         <div class="col-12">
           <div class="row">
+            @if ($membershipsection2s->isNotEmpty())
+            @foreach($membershipsection2s as $membershipsection2)
             <div class="col-12 col-md-6">
                   <div class="row">
                     <div class="col-3">
-                      <img class="rounded-circle" src="./Membership - Investor Group on Climate Change_files/Policy-icon.webp" alt="">
+                      <img class="rounded-circle" src="{{ asset('images/' . $membershipsection2->image) }}" alt="">
                     </div>
                     <div class="col-9 pl-0">
-                      <h5>Use your investor voice</h5>
-                      <p>to drive climate policy in Australia and New Zealand</p>
+                      <h5>{{$membershipsection2->heading}}</h5>
+                      <p>{{$membershipsection2->paragraph}}</p>
                     </div>
                   </div>
-                </div>
-              </div>
+            </div>
+            @endforeach
+            @endif
           </div>
+        </div>
 
       </div>
     </div>
@@ -173,25 +175,22 @@
 <div class="flexible-columns content-section container-fluid align-right">
   <div class="content-section-inner default-padding default">
     <div class="col-12 pl-0 pr-0">
-
-                          <div class="row">
-                                                    <div class="col-12 ">
-                    <h2>Membership categories</h2>
-                  </div>
-                                                    <div class="col-12 col-md-6 ">
-                    <h5>Full member</h5>
-<p>Full Membership of the IGCC is open to all institutional investors including superannuation funds, insurance companies, fund managers and property fund managers.</p>
-                  </div>
-                                                    <div class="col-12 col-md-6 ">
-                    <h5>Associate member</h5>
-<p>Associated Membership of the IGCC is open to organisations that contribute to the work of IGCC’s full members, including service providers, consultants, brokers, and industry associations.</p>
-                  </div>
-                                                    <div class="col-12 col-md-6 ">
-                                      </div>
-                                                    <div class="col-12 col-md-6 ">
-                                      </div>
-                              </div>
-                </div>
+      <div class="row">
+        <div class="col-12">
+            <h2>Membership Categories</h2>
+        </div>
+        @if ($categorys->isNotEmpty())
+        @foreach($categorys as $category)
+        <div class="col-12 col-md-6">
+            <h5>{{$category->heading}}</h5>
+            <p>{{$category->paragraph}}</p>
+        </div>
+        @endforeach
+        @endif
+        
+    </div>
+                    
+    </div>
   </div>
 </div>
                                 
@@ -203,42 +202,31 @@
         <div class="col-12">
           <h2>Find out more</h2>
 
-                      <div class="row">
-                              <div class="col-12 col-md-6">
-
-                  <div class="row">
-
+          <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="row align-items-center">
                     <div class="col-3">
-
-                                                                                          <img class="rounded-circle" src="./Membership - Investor Group on Climate Change_files/Duncan-Paterson-e1685535699598.jpg" alt="Duncan Paterson">
-                                          </div>
-
-                    <div class="col-9 pl-0">
-                      <h5>Duncan Paterson</h5>
-<p>Director, Investor Practice<br>
-<a href="mailto:duncan.paterson@igcc.org.au" target="_blank" rel="noopener">duncan.paterson@igcc.org.au</a></p>
+                        <img class="rounded-circle img-fluid" src="./Membership - Investor Group on Climate Change_files/Duncan-Paterson-e1685535699598.jpg" alt="Duncan Paterson">
                     </div>
-
-                  </div>
+                    <div class="col-9 pl-0">
+                        <h5>Duncan Paterson</h5>
+                        <p>Director, Investor Practice</p>
+                    </div>
                 </div>
-                              <div class="col-12 col-md-6">
-
-                  <div class="row">
-
+            </div>
+        
+            <div class="col-12 col-md-6">
+                <div class="row align-items-center">
                     <div class="col-3">
-
-                                                                                          <img class="rounded-circle" src="./Membership - Investor Group on Climate Change_files/Marwa_Curran_IGCC-8562243_Sq_web-e1685535829279.jpg" alt="Marwa Curran">
-                                          </div>
-
-                    <div class="col-9 pl-0">
-                      <h5>Marwa Curran</h5>
-<p>Manager, Investor Engagement<br>
-<a href="mailto:marwa.curran@igcc.org.au" target="_blank" rel="noopener">marwa.curran@igcc.org.au</a></p>
+                        <img class="rounded-circle img-fluid" src="./Membership - Investor Group on Climate Change_files/Marwa_Curran_IGCC-8562243_Sq_web-e1685535829279.jpg" alt="Marwa Curran">
                     </div>
-
-                  </div>
+                    <div class="col-9 pl-0">
+                        <h5>Marwa Curran</h5>
+                        <p>Manager, Investor Engagement</p>
+                    </div>
                 </div>
-                          </div>
+            </div>
+        </div>        
           
         </div>
 
@@ -252,46 +240,40 @@
     <div class="col-12 px-0">
       <div class="row align-items-center">
 
-        <div class="col-12">
-          <p style="text-align: center"><a class="btn btn-secondary"  href="/download-prospectus" target="_blank">Download the Membership Prospectus</a></p>
-<h2>Ready to join?</h2>
-
-                      <div class="row">
-                              <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                                                          <img class="rounded-circle" src="./Membership - Investor Group on Climate Change_files/investor.svg" alt="">
-                                          </div>
-
-                    <div class="col-9 pl-0">
+        <div class="col-12 text-center">
+          <p>
+              <a class="btn btn-secondary" href="/download-prospectus" target="_blank">
+                  Download the Membership Prospectus
+              </a>
+          </p>
+          <h2>Ready to join?</h2>
+      </div>
+      
+      <div class="row">
+          <div class="col-12 col-md-6">
+              <div class="row align-items-center">
+                  <div class="col-3">
+                      <img class="rounded-circle img-fluid" src="./Membership - Investor Group on Climate Change_files/investor.svg" alt="Step 1">
+                  </div>
+                  <div class="col-9 pl-0">
                       <h5>Step 1.</h5>
-<p>Complete the Membership Application form and sign the Statement of Commitment.</p>
-                    </div>
-
+                      <p>Complete the Membership Application form and sign the Statement of Commitment.</p>
                   </div>
-                </div>
-                              <div class="col-12 col-md-6">
-
-                  <div class="row">
-
-                    <div class="col-3">
-
-                                                                                          <img class="rounded-circle" src="./Membership - Investor Group on Climate Change_files/members.svg" alt="">
-                                          </div>
-
-                    <div class="col-9 pl-0">
+              </div>
+          </div>
+      
+          <div class="col-12 col-md-6">
+              <div class="row align-items-center">
+                  <div class="col-3">
+                      <img class="rounded-circle img-fluid" src="./Membership - Investor Group on Climate Change_files/members.svg" alt="Step 2">
+                  </div>
+                  <div class="col-9 pl-0">
                       <h5>Step 2.</h5>
-<p>Pay the Membership fees. Fees are used to support the range of IGCC activities.</p>
-                    </div>
-
+                      <p>Pay the Membership fees. Fees are used to support the range of Logix 199 activities.</p>
                   </div>
-                </div>
-                          </div>
-          
-        </div>
+              </div>
+          </div>
+      </div>
 
       </div>
     </div>
@@ -300,15 +282,23 @@
                                 
 <div class="standard-content content-section container-fluid  content-end bottom-padding-large">
 
-  <div class="content-section-inner default-padding  grey">
-    <div class="row mr-lg-0 align-items-stretch">
-      <div class="col-12 ">
-        <p style="text-align: center"><a class="btn btn-secondary mr-3 " href="/download-membership" target="_blank">Membership policy</a> <a class="btn btn-secondary-light" href="/download-application_form" target="_blank">Application form</a> &nbsp;&nbsp; <a class="btn btn-secondary-light" href="/download-fee_schedule" target="_blank">Fee schedule</a></p>
-<p class="smaller-width mt-4">For more information, call the IGCC team on +61 2 8974 1160 or email us at secretariat@igcc.org.au</p>
-      </div>
+  <div class="content-section-inner default-padding grey">
+    <div class="row align-items-stretch">
+        <div class="col-12 text-center">
+            <p>
+                <a class="btn btn-secondary mr-3" href="/download-membership" target="_blank">Membership Policy</a>
+                <a class="btn btn-secondary-light mr-3" href="/download-application_form" target="_blank">Application Form</a>
+                <a class="btn btn-secondary-light" href="/download-fee_schedule" target="_blank">Fee Schedule</a>
+            </p>
+            <p class="smaller-width mt-4">
+                For more information, call the Logix 199 team on 
+                <a href="">{{$settings->phone}}</a> or email us at 
+                <a href="">{{$settings->email}}</a>
+            </p>
+        </div>
+    </div>
+</div>
 
-          </div>
-  </div>
 </div>
   
 @include('userpages.section8')

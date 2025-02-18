@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Models\About;
 use App\Models\AddMember;
+use App\Models\Category;
 use App\Models\Highlight;
 use App\Models\Initiative;
+use App\Models\MebershipSection2;
 use App\Models\Member;
 use App\Models\Networks;
 use App\Models\News;
@@ -224,8 +226,10 @@ public function logout() {
     public function memberships(){ 
         $user = Auth::user();   
         $teams = Team::all(); 
-        $members = AddMember::all();     
-        return view('userpages.membership',compact('user','teams','members'));
+        $members = AddMember::all();  
+        $membershipsection2s = MebershipSection2::all();
+        $categorys = Category::all();   
+        return view('userpages.membership',compact('user','teams','members','membershipsection2s','categorys'));
     }
     public function supportourwork(){ 
         $user = Auth::user();         

@@ -2,11 +2,14 @@
 
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\BannerController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HighlightController;
 use App\Http\Controllers\InitiativeController;
 use App\Http\Controllers\JoinController;
+use App\Http\Controllers\MebershipSection2Controller;
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\MembersController;
+use App\Http\Controllers\MemberShipsController;
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\NetworkController;
 use App\Http\Controllers\NewsController;
@@ -97,6 +100,9 @@ Route::group(['middleware' => ['admin.auth'], 'prefix' => 'admin'], function() {
     Route::get("add-section-2", [Section2Controller::class, "section2"]);
     Route::get("add-resource", [ResourceController::class, "resource"]);
     Route::get("add-join", [JoinController::class, "join"]);
+    Route::get("add", [MemberShipsController::class, "membership"]);
+    Route::get("add-membership-section2", [MebershipSection2Controller::class, "membershipsection2"]);
+    Route::get("add-membership-category", [CategoryController::class, "category"]);
 
 });
  
@@ -254,3 +260,27 @@ Route::get('/join/{id}', [JoinController::class, 'show'])->name('join.show');
 Route::post('/join/{id}', [JoinController::class, 'update'])->name('join.update');
 //to delet join
 Route::post('/delete-join', [JoinController::class, 'deletejoin'])->name('delete.join');
+//to add membership data
+Route::post('/membership/store', [MemberShipsController::class, 'store'])->name('membership.store');
+//to get membership data
+Route::get('/membership/{id}', [MemberShipsController::class, 'show'])->name('membership.show');
+// Update membership data
+Route::post('/membership/{id}', [MemberShipsController::class, 'update'])->name('membership.update');
+//to delet membership
+Route::post('/delete-membership', [MemberShipsController::class, 'deletemembership'])->name('delete.membership');
+//to add membershipsection2 data
+Route::post('/membershipsection2/store', [MebershipSection2Controller::class, 'store'])->name('membershipsection2.store');
+//to get membershipsection2 data
+Route::get('/membershipsection2/{id}', [MebershipSection2Controller::class, 'show'])->name('membershipsection2.show');
+// Update membershipsection2 data
+Route::post('/membershipsection2/{id}', [MebershipSection2Controller::class, 'update'])->name('membershipsection2.update');
+//to delet membershipsection2
+Route::post('/delete-membershipsection2', [MebershipSection2Controller::class, 'deletemembershipsection2'])->name('delete.membershipsection2');
+//to add category data
+Route::post('/category/store', [CategoryController::class, 'store'])->name('category.store');
+//to get category data
+Route::get('/category/{id}', [CategoryController::class, 'show'])->name('category.show');
+// Update category data
+Route::post('/category/{id}', [CategoryController::class, 'update'])->name('category.update');
+//to delet category
+Route::post('/delete-category', [CategoryController::class, 'deletecategory'])->name('delete.category');
