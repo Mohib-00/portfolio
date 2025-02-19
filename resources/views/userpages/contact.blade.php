@@ -122,77 +122,29 @@
     <div class="page-heading ml-auto mr-auto align-center content-section text-white ">
       <div class="row align-items-center">
         <div class="order-2 col-md-10 order-md-1">
-
-          
           <h1 class=" ">Contact us</h1>
-
-          
         </div>
       </div>
     </div>
   </div>
 
-    
-
-
-
 
 <div class="wrapper" id="page-wrapper">
-
 	<div id="content" tabindex="-1">
-
 		<main class="site-main" id="main">
 
-			
-				<article class="post-512 page type-page status-publish hentry" id="post-512">
-    <div class="components mx-auto">
-
-                                            
-
-  @include('userpages.section10')
-
-                                
-<div class="flexible-columns content-section container-fluid  top-padding-none content-end">
-  <div class="content-section-inner default-padding moss">
-    <div class="col-12 pl-0 pr-0">
-
-                          <div class="row">
-                                                    <div class="col-12 col-md-6 pt-5">
-                    <h4>PO Box Q937<br>
-Queen Victoria Building NSW 1230</h4>
-<h5>Follow us</h5>
-<p><img decoding="async" class="alignnone size-full wp-image-899 mr-3" src="./Contact us - Investor Group on Climate Change_files/linkedin.svg" alt="" width="25" height="25"> <img decoding="async" class="mr-3 alignnone size-medium wp-image-900" src="./Contact us - Investor Group on Climate Change_files/Twitter-X_whitesml.png" alt="" width="25"> <img decoding="async" class="alignnone size-medium wp-image-901" src="./Contact us - Investor Group on Climate Change_files/youtube.svg" alt="" width="25"></p>
-                  </div>
-                                                    <div class="col-12 col-md-6 pt-5">
-                    <p class="text-white">Phone: +61 2 8974 1160<br>
-Email: secretariat@igcc.org.au<br>
-Media enquiries: secretariat@igcc.org.au<br>
-Membership enquiries: secretariat@igcc.org.au</p>
-                  </div>
-                              </div>
-                </div>
-  </div>
-</div>
-            
+	<article class="post-512 page type-page status-publish hentry" id="post-512">
+    <div class="components mx-auto">                               
+       @include('userpages.section10')  
     </div>
-</article>
+  </article>
 
-			
+		</main>
+	</div>
+</div>
 
-
-
-		</main><!-- #main -->
-
-	</div><!-- #content -->
-
-</div><!-- #page-wrapper -->
-
-
-
-
-</div><!-- #page we need this extra closing tag here -->
+</div>
 @include('userpages.footer')
-
 @include('ajax')
 
 <script src="./Contact us - Investor Group on Climate Change_files/atcb.min.js.download" id="add-to-calendar-button-js" async="" data-wp-strategy="async"></script>
