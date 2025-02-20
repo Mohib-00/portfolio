@@ -1,5 +1,4 @@
 <?php
-
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\BannerController;
 use App\Http\Controllers\CareerController;
@@ -67,23 +66,19 @@ Route::get('/join_our_team', [UserAuthController::class, 'joinourteam']);
 Route::get("register", [RegisterController::class, "register"]);
 //to open login page
 Route::get("login", [RegisterController::class, "login"])->name('login');;
-
 //register
 Route::post("register",[UserAuthcontroller::class,"register"]);
 //Login
 Route::post("login",[UserAuthcontroller::class,"login"]);
-
 Route::group([
     "middleware" => ["auth:sanctum"]
 ],function(){
-
 //Logout
 Route::post("logout",[UserAuthcontroller::class,"logout"]);
 //to logout normal user
 Route::post('logoutuser', [UserAuthcontroller::class, 'logoutuser']);
 //to change password
 Route::post("changePassword",[UserAuthcontroller::class,"changePassword"]);
-
 });
     Route::group(['middleware' => ['admin.auth'], 'prefix' => 'admin'], function() {
     Route::get("", [UserAuthcontroller::class, "admin"]);
@@ -113,7 +108,6 @@ Route::post("changePassword",[UserAuthcontroller::class,"changePassword"]);
     Route::get("add-support-section3", [Support3Controller::class, "support3"]);
     Route::get("add-career-opportunities", [CareerController::class, "career"]);
     Route::get("change-password", [SettingsController::class, "changepassword"]);
-
 });
  
 Route::get('/download-prospectus', function () {
@@ -326,8 +320,11 @@ Route::get('/career/{id}', [CareerController::class, 'show'])->name('career.show
 Route::post('/career/{id}', [CareerController::class, 'update'])->name('career.update');
 //to delet career
 Route::post('/delete-career', [CareerController::class, 'deletecareer'])->name('delete.career');
-
+//to open forgot password page
 Route::get('forgot-password', [ForgotPasswordController::class, 'showForgotPasswordForm'])->name('password.request');
+//to send reset link
 Route::post('forgot-password', [ForgotPasswordController::class, 'sendResetLink'])->name('password.email');
+//to open reset password page
 Route::get('reset-password/{token}', [ResetPasswordController::class, 'showResetForm'])->name('password.reset');
+//to reset password
 Route::post('reset-password', [ResetPasswordController::class, 'updatePassword'])->name('password.update');
