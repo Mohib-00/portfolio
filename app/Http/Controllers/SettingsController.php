@@ -98,6 +98,10 @@ public function updateSetting(Request $request, $id)
     ]);
 }
 
-
+public function changepassword()
+{
+$user = Auth::user();   
+ return view('adminpages.profile', ['userName' => $user->name]);
+}
 
 }

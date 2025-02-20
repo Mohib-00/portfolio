@@ -27,6 +27,8 @@ use App\Http\Controllers\Support3Controller;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\UserAuthcontroller;
 use App\Http\Controllers\WorkstreamController;
+use App\Http\Controllers\Auth\ForgotPasswordController;
+use App\Http\Controllers\Auth\ResetPasswordController;
 use Illuminate\Support\Facades\Route;
 
 //User Page    
@@ -64,7 +66,7 @@ Route::get('/join_our_team', [UserAuthController::class, 'joinourteam']);
 //to open register page
 Route::get("register", [RegisterController::class, "register"]);
 //to open login page
-Route::get("login", [RegisterController::class, "login"]);
+Route::get("login", [RegisterController::class, "login"])->name('login');;
 
 //register
 Route::post("register",[UserAuthcontroller::class,"register"]);
@@ -83,8 +85,7 @@ Route::post('logoutuser', [UserAuthcontroller::class, 'logoutuser']);
 Route::post("changePassword",[UserAuthcontroller::class,"changePassword"]);
 
 });
-
-Route::group(['middleware' => ['admin.auth'], 'prefix' => 'admin'], function() {
+    Route::group(['middleware' => ['admin.auth'], 'prefix' => 'admin'], function() {
     Route::get("", [UserAuthcontroller::class, "admin"]);
     Route::get("users", [UserAuthcontroller::class, "users"]);
     Route::get("messages", [MessageController::class, "message"]);
@@ -111,6 +112,8 @@ Route::group(['middleware' => ['admin.auth'], 'prefix' => 'admin'], function() {
     Route::get("add-support-section2", [Support2Controller::class, "support2"]);
     Route::get("add-support-section3", [Support3Controller::class, "support3"]);
     Route::get("add-career-opportunities", [CareerController::class, "career"]);
+    Route::get("change-password", [SettingsController::class, "changepassword"]);
+
 });
  
 Route::get('/download-prospectus', function () {
@@ -323,3 +326,8 @@ Route::get('/career/{id}', [CareerController::class, 'show'])->name('career.show
 Route::post('/career/{id}', [CareerController::class, 'update'])->name('career.update');
 //to delet career
 Route::post('/delete-career', [CareerController::class, 'deletecareer'])->name('delete.career');
+
+Route::get('forgot-password', [ForgotPasswordController::class, 'showForgotPasswordForm'])->name('password.request');
+Route::post('forgot-password', [ForgotPasswordController::class, 'sendResetLink'])->name('password.email');
+Route::get('reset-password/{token}', [ResetPasswordController::class, 'showResetForm'])->name('password.reset');
+Route::post('reset-password', [ResetPasswordController::class, 'updatePassword'])->name('password.update');

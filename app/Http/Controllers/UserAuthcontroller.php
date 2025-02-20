@@ -303,6 +303,17 @@ public function deleteUser(Request $request)
 
     return response()->json(['success' => false, 'message' => 'User not found']);
 }
-
+public function changePassword(Request $request){
+    $request->validate([
+        'password' => 'required|confirmed',
+    ]);
+    $loggeduser = auth()->user();
+    $loggeduser->password = Hash::make($request->password);
+    $loggeduser->save();
+    return response()->json([
+        'message' => 'Password change succesfully',
+        'status' => 'Success'   
+    ], 200);
+}
      
 }

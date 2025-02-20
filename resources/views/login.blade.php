@@ -40,6 +40,9 @@
       <div class="already-account">
         Don't have an account? <a href="/register" class="signUp">Sign Up</a>
       </div>
+      <div class="already-account">
+        <a href="/forgot-password" class="forgot-password">Forgot Password?</a>
+    </div>
       <button type="button" id="login" class="btn mt-3">Login</button>
     </form>
   </div>

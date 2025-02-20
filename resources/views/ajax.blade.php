@@ -513,6 +513,57 @@ $(document).ready(function() {
         });
     });
 });
+
+//to chnage password
+$(document).on('click', '#submitpassword', function(e) {
+ 
+ $('#passwordError').text('');
+ $('#confirmPasswordError').text('');
+ $('#message').html('');
+
+ const password = document.getElementById('password').value;
+ const confirmPassword = document.getElementById('confirm_password').value;
+
+ $.ajax({
+     url: '/changePassword',
+     type: 'POST',
+     data: {
+         password: password,
+         password_confirmation: confirmPassword
+     },
+     headers: {
+         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+     },
+     success: function (response) {
+         Swal.fire({
+             icon: 'success',
+             title: 'Success',
+             text: response.message,
+             confirmButtonText: 'OK'
+         });
+         $('#changePasswordForm')[0].reset();  
+     },
+     error: function (xhr) {
+         if (xhr.status === 422) {
+             const errors = xhr.responseJSON.errors;
+             if (errors.password) {
+                 $('#passwordError').text(errors.password[0]);
+             }
+             if (errors.password_confirmation) {
+                 $('#confirmPasswordError').text(errors.password_confirmation[0]);
+             }
+         } else {
+             Swal.fire({
+                 icon: 'error',
+                 title: 'Error',
+                 text: 'An error occurred. Please try again.',
+                 confirmButtonText: 'OK'
+             });
+         }
+     }
+ });
+});
+
  
 </script>
 </body>
