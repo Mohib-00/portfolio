@@ -101,11 +101,11 @@
     		</style>
 		  <style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
 
-  <body class="page-template-default page page-id-497 page-child parent-pageid-16 wp-custom-logo wp-embed-responsive group-blog" itemscope="" itemtype="http://schema.org/WebSite" cz-shortcut-listen="true">
+  <body class="page-template-default page page-id-497 page-child parent-pageid-16 wp-custom-logo wp-embed-responsive group-blog">
     <div class="site" id="page">
       @include('userpages.navbar')
   
-      <div class="page-header position-relative bg-primary standard" style="background: var(--hero-gradient), url(https://igcc.org.au/wp-content/uploads/2023/06/AdobeStock_149477442_Web-1280x657.jpg) no-repeat center top / cover">
+      <div class="page-header position-relative bg-primary standard">
           <div class="position-absolute page-header-overlay col-10 col-md-8 col-lg-auto px-0 bottom-30">
               <img src="./Our management - Investor Group on Climate Change_files/InnerPage-Overlay.svg" alt="">
           </div>

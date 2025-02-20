@@ -12,10 +12,8 @@
  @include('userpages.navbar')
      
 
-    <div class="page-header position-relative bg-primary standard" style="background: var(--hero-gradient), url(https://igcc.org.au/wp-content/uploads/2023/06/AdobeStock_149477442_Web-1280x657.jpg) no-repeat center top / cover">
-              <div class="position-absolute page-header-overlay col-10 col-md-8 col-lg-auto px-0 bottom-30">
-        <img src="./About us - Investor Group on Climate Change_files/InnerPage-Overlay.svg" alt="">
-      </div>
+    <div class="page-header position-relative bg-primary standard">
+            
     
     <div class="bgcolor d-none">
       <div class="align-center content-section ml-auto mr-auto">
@@ -23,7 +21,7 @@
           <div class="order-2 col-md-10 order-md-1">
           <div class="heading-placeholder visibility-none opacity-0"></div>
             <span class=" h1 py-md-6 heading-placeholder visibility-none opacity-0 vbn">About us</span>
-                      </div>
+          </div>
         </div>
       </div>
     </div>
@@ -31,20 +29,11 @@
     <div class="page-heading ml-auto mr-auto align-center content-section text-white ">
       <div class="row align-items-center">
         <div class="order-2 col-md-10 order-md-1">
-
-          
           <h1 class="vbn">About us</h1>
-
-          
         </div>
       </div>
     </div>
   </div>
-
-    
-
-
-
 
 <div class="wrapper" id="page-wrapper">
 

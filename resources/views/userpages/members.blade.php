@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0038)https://igcc.org.au/about/our-members/ -->
 <html lang="en">
 <head>
     @include('userpages.css')
@@ -10,10 +9,7 @@
 
       @include('userpages.navbar')
     
-      <div class="page-header position-relative bg-primary standard" style="background: var(--hero-gradient), url(https://igcc.org.au/wp-content/uploads/2023/06/AdobeStock_149477442_Web-1280x657.jpg) no-repeat center top / cover">
-        <div class="position-absolute page-header-overlay col-10 col-md-8 col-lg-auto px-0 bottom-30">
-          <img src="./Our members - Investor Group on Climate Change_files/InnerPage-Overlay.svg" alt="">
-        </div>
+      <div class="page-header position-relative bg-primary standard" >
     
         <div class="bgcolor d-none">
           <div class="align-center content-section ml-auto mr-auto">

@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0030)https://igcc.org.au/resources/ -->
 <html lang="en-AU"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     
@@ -97,15 +96,12 @@
     }		</style>
 		  <style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
 
-  <body class="page-template-default page page-id-253 page-parent wp-custom-logo wp-embed-responsive group-blog" itemscope="" itemtype="http://schema.org/WebSite" cz-shortcut-listen="true">
+  <body class="page-template-default page page-id-253 page-parent wp-custom-logo wp-embed-responsive group-blog">
     <div class="site" id="page">
 
         @include('userpages.navbar')
       
-        <div class="page-header position-relative bg-primary standard" style="background: var(--hero-gradient), url(https://igcc.org.au/wp-content/uploads/2023/06/ben-carless-uqEYvn2Av-c-unsplash-1280x657.jpg) no-repeat center top / cover">
-          <div class="position-absolute page-header-overlay col-10 col-md-8 col-lg-auto px-0 bottom-30">
-            <img src="./Resources - Investor Group on Climate Change_files/InnerPage-Overlay.svg" alt="">
-          </div>
+        <div class="page-header position-relative bg-primary standard">
       
           <div class="bgcolor d-none">
             <div class="align-center content-section ml-auto mr-auto">

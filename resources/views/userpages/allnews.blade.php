@@ -95,15 +95,11 @@
 	</style>
 		</head>
 
-  <body class="page-template-default page page-id-267 wp-custom-logo wp-embed-responsive group-blog" itemscope="" itemtype="http://schema.org/WebSite" cz-shortcut-listen="true">
+  <body class="page-template-default page page-id-267 wp-custom-logo wp-embed-responsive group-blog">
 	<div class="site" id="page">
 		@include('userpages.navbar')
 	  
-		<div class="page-header position-relative bg-primary standard" 
-			 style="background: var(--hero-gradient), url(https://igcc.org.au/wp-content/uploads/2023/06/ben-carless-LMF4EgirF-s-unsplash-1280x657.jpg) no-repeat center top / cover;">
-		  <div class="position-absolute page-header-overlay col-10 col-md-8 col-lg-auto px-0 bottom-30">
-			<img src="./News - Investor Group on Climate Change_files/InnerPage-Overlay.svg" alt="">
-		  </div>
+		<div class="page-header position-relative bg-primary standard">
 	  
 		  <div class="bgcolor d-none">
 			<div class="align-center content-section ml-auto mr-auto">
